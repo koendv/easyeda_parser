@@ -1,0 +1,154 @@
+ai_intent_understanding:
+  algorithmic_intent:
+    bom_centric_approach:
+      how: BOM contains Manufacturer Part=MPN, Supplier Part=LCSC, etc.
+      why: Avoid external dependencies, use data already in EasyEDA exports
+    field_level_verbosity:
+      how: Each field has verbosity level, only included if current >= required
+      why: Fine-grained control over output size vs detail tradeoff
+    progressive_verbosity_reduction:
+      design_by: User (not AI) - key innovation
+      how: Start at verbosity 5, reduce until under limit
+      why: Guarantee output fits token limits while maximizing detail
+  design_constraints:
+    implementation: Simple, maintainable code over optimized
+    runtime: Complete within "tea-drinking time"
+    token_limits: Output must fit within DeepSeek/ChatGPT context windows
+  parser_philosophy:
+    core_principle: Faithful translator, not inventor or curator
+    implications:
+    - Preserve all original data in categorized sections
+    - Make missing data explicit (null values, not omission)
+    - AI decides how to handle gaps, not parser
+  what_ai_should_understand:
+  - This is NOT a DRC/DFM tool - those exist elsewhere
+  - This IS for circuit intent analysis (what does this circuit DO?)
+  - YAML structure is optimized for AI circuit understanding
+  - Metadata explains coordinate system, units, conventions
+development_continuation:
+  code_architecture:
+    data_structures:
+      component: '{designator, type, value, manufacturer, placement, pins, ...}'
+      verbosity_levels: 1-5 with specific field inclusions
+    key_algorithms:
+      progressive_reduction:
+        guarantee: Finds highest verbosity ≤ token limit
+        pseudocode: "verbosity = 5\nwhile verbosity >= 1:\n    yaml = generate_at_verbosity(verbosity)\n\
+          \    tokens = estimate_tokens(yaml)\n    if tokens <= limit:\n        return yaml, verbosity,\
+          \ tokens\n    verbosity -= 1\nreturn minimal yaml with warning"
+    main_functions:
+      generate_within_token_limit: Core progressive reduction algorithm
+      generate_yaml_at_verbosity: Generate YAML at specific verbosity level
+      parse_bom: Read Excel, handle comma-separated designators
+      parse_netlist: Read JSON, extract pin connectivity
+      parse_pickplace: Read Excel, extract coordinates
+  current_state:
+    known_limitations:
+    - Assumes specific column names in BOM
+    - No support for other EDA tools (KiCad, Altium)
+    - Token counting uses exact tiktoken cl100k_base; overestimates ~15–30% for DeepSeek models
+    validation_status:
+      chatgpt: Successfully parses and analyzes output YAML
+      performance: 5-15 seconds runtime, ~90K tokens output
+      real_world: Tested with actual EasyEDA exports
+    working_features:
+    - Parse BOM with comma-separated designators
+    - Parse PickPlace with coordinate extraction
+    - Parse Netlist JSON/.enet format
+    - Progressive verbosity reduction algorithm
+    - BOM field checking and reporting
+    - Self-explanatory metadata with coordinate system
+  development_history:
+    key_decisions:
+    - BOM-centric approach over JLCPCB library dependency
+    - Progressive reduction over reactive compression
+    - Field-level verbosity control for fine-grained sizing
+    - Self-explanatory metadata after user had to explain coordinates to ChatGPT
+    lessons_learned:
+    - Simple implementations often outperform complex ones initially
+    - ChatGPT validation is effective for AI-format testing
+    - 90K tokens is manageable for modern LLM context windows
+    - Explicit missing data is better than omission for AI analysis
+    phases:
+    - 'Phase 1: Simple parser with all data'
+    - 'Phase 2: Added token limiting with warnings'
+    - 'Phase 3: Implemented progressive verbosity reduction (user-designed)'
+    - 'Phase 4: Added BOM field checking'
+    - 'Phase 5: Enhanced metadata (response to ChatGPT needing coordinate explanation)'
+    - 'Phase 6: YAML ordering fixed to ensure metadata appears first (anti-truncation measure)'
+easyeda_integration_analysis:
+  business_case:
+    competitive_edge: First major EDA tool with native AI analysis support
+    platform_lockin: Users stay in EasyEDA for AI analysis workflow
+    user_benefit: Better circuit understanding, learning, documentation
+  integration_options:
+  - Embed as feature in EasyEDA Pro UI
+  - Add "Export for AI analysis" menu option
+  - Include in EasyEDA CLI tools
+  - Open source reference implementation
+  problem_solved: Users want AI circuit intent analysis but current formats (PDFs, Gerbers) are bulky
+    and suboptimal. This converter provides optimal AI input format from existing EasyEDA exports.
+  technical_compatibility:
+    dependencies: Python + pandas (could be ported to JavaScript for web version)
+    input_files: Standard EasyEDA exports (no modification needed)
+    output_format: YAML (universally parseable)
+  value_proposition:
+    for_easyeda: Extends utility of EasyEDA exports, keeps users in ecosystem
+    for_users: Enables AI circuit analysis without manual explanation
+    technical_fit: Uses standard exports (BOM, PickPlace, Netlist), no new APIs needed
+future_potential:
+  community_development:
+  - GitHub repository with three-audience documentation
+  - Plugin system for custom field processors
+  - Template system for different YAML structures for different AIs
+  feature_extensions:
+  - Support for other EDA tools (KiCad, Altium, Eagle)
+  - Web interface (browser-based converter)
+  - REST API for automated analysis
+  for_easyeda:
+    ai_partnership: Partner with AI companies for circuit analysis
+    enhanced_exports: Optimize exports specifically for AI analysis
+    native_integration: Add as built-in EasyEDA feature
+regeneration_instructions:
+  code_templates:
+    main_structure: "def main():\n    # Parse CLI arguments\n    # Check file existence\n    # Parse all\
+      \ three input files\n    # Generate YAML with progressive reduction\n    # Save output with metadata"
+    progressive_reduction: "def generate_within_token_limit(data, limit):\n    current_verbosity = 5\n\
+      \    while current_verbosity >= 1:\n        yaml = generate_at_verbosity(current_verbosity)\n  \
+      \      if estimate_tokens(yaml) <= limit:\n            return yaml, current_verbosity\n        current_verbosity\
+      \ -= 1\n    return yaml, 1  # Minimal"
+  for_developers: 'To continue development or port to another language:
+
+    1. Understand the parser philosophy (faithful translator)
+
+    2. Implement the progressive reduction algorithm
+
+    3. Preserve field-level verbosity control
+
+    4. Include self-explanatory metadata
+
+    5. Respect token limits and runtime constraints
+
+    6. Ensure metadata appears FIRST in YAML output for truncation resilience'
+  for_easyeda_integration: 'For integration into EasyEDA:
+
+    1. Use existing export formats as input
+
+    2. Consider JavaScript port for web version
+
+    3. Add UI option for "Export for AI analysis"
+
+    4. Preserve the three-audience value proposition'
+specification:
+  format_version: '1.0'
+  last_updated: '2026-01-16T00:00:00.000000'
+  purpose: 'Three-audience specification: Development continuation, EasyEDA integration analysis, AI intent
+    understanding'
+  version: '1.0'
+  critical_requirements:
+    yaml_structure:
+      metadata_first: true
+      why: 'In case of AI context window truncation, metadata must survive to preserve
+        meaning'
+      implementation: 'Use sort_keys=False in yaml.dump() to maintain output order
+        (metadata → components → nets)'

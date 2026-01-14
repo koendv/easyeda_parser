@@ -1,0 +1,902 @@
+metadata:
+  component_count: 16
+  net_count: 12
+  verbosity_level: 5
+  verbosity_description: 'EXHAUSTIVE: + All original BOM fields'
+  generation_timestamp: '2026-01-15T16:08:33.787596'
+  generator: EasyEDA Parser v1.0
+  data_sources:
+    bom: 'Bill of Materials: Component specifications, values, manufacturers'
+    pickplace: 'Pick & Place: Physical coordinates, rotation, layer for assembly'
+    netlist: 'Netlist: Electrical pin-to-pin connectivity'
+  coordinate_system:
+    units: millimeters (mm)
+    origin: Bottom-left corner of PCB (standard PCB manufacturing coordinates)
+    x_axis: Horizontal, increasing to the right
+    y_axis: Vertical, increasing upward
+    rotation: Degrees, counter-clockwise positive (0° = component oriented as in datasheet)
+    placement_reference: Coordinates are from the component center (Mid X, Mid Y)
+    estimated_board_size: 20.8mm × 47.5mm
+    component_extent: &id001
+      min_x_mm: -3.8
+      max_x_mm: 7.0
+      min_y_mm: -16.0
+      max_y_mm: 21.5
+      width_mm: 10.8
+      height_mm: 37.5
+  layer_codes:
+    T: Top layer (components on top side of PCB)
+    B: Bottom layer (components on bottom side)
+  interpretation_notes:
+  - Component types (R=resistor, C=capacitor, L=inductor, U=IC, etc.) are inferred from designator prefixes
+  - Placement coordinates show physical layout - components near each other are functionally related
+  - Net connections show electrical connectivity - components on same net are electrically connected
+  - Rotation 0° means component oriented as shown in datasheet, 90° means rotated 90° counter-clockwise
+  - This data comes from EasyEDA Pro exports and preserves all original information
+  board_dimensions:
+    width_mm: 20.8
+    height_mm: 47.5
+    estimated_board_size: 20.8mm × 47.5mm
+    component_extent: *id001
+    note: Dimensions estimated from component placement with 5mm margin
+components:
+- designator: C1
+  type: capacitor
+  value: 10uF
+  footprint: C0603
+  comment: 10uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A106MA8NRNC
+  supplier_part: C96446
+  placement:
+    x_mm: -3.81
+    y_mm: 9.398
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_GND
+    '2': CAN_5V_OUT
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10uF ±20% 25V
+  bom_data:
+    No.: '1'
+    Quantity: '2'
+    Comment: 10uF
+    Designator: C1,C4
+    Footprint: C0603
+    Value: 10uF
+    Manufacturer Part: CL10A106MA8NRNC
+    Manufacturer: SAMSUNG(三星)
+    Supplier Part: C96446
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0026'
+    Tolerance: ±20%
+    LCSC Part Name: 10uF ±20% 25V
+    Primary Category: Capacitors
+    Secondary Category: Multilayer Ceramic Capacitors MLCC - SMD/SMT
+    Device: CL10A106MA8NRNC
+    Name: 10uF
+    Unique ID: gge224,gge227
+    Pin Count: '2'
+    JLCPCB Stock: '2206271'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: C0603_L1.6-W0.8-H0.8
+    3D Model Transform: 62.992,31.496,0,0,0,0,0,0,0
+    Check: 'false'
+- designator: C2
+  type: capacitor
+  value: 100nF
+  footprint: C0603
+  comment: 100nF
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: CC0603KRX7R9BB104
+  supplier_part: C14663
+  placement:
+    x_mm: -3.81
+    y_mm: 7.493
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_GND
+    '2': CAN_5V_OUT
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 50V
+  bom_data:
+    No.: '2'
+    Quantity: '2'
+    Comment: 100nF
+    Designator: C2,C5
+    Footprint: C0603
+    Value: 100nF
+    Manufacturer Part: CC0603KRX7R9BB104
+    Manufacturer: YAGEO(国巨)
+    Supplier Part: C14663
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0004'
+    Tolerance: ±10%
+    LCSC Part Name: 100nF ±10% 50V
+    Primary Category: Capacitors
+    Secondary Category: Multilayer Ceramic Capacitors MLCC - SMD/SMT
+    Device: CC0603KRX7R9BB104
+    Name: 100nF
+    Unique ID: gge228,gge229
+    Pin Count: '2'
+    JLCPCB Stock: '53593823'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: C0603_L1.6-W0.8-H0.8
+    3D Model Transform: 62.992,31.496,0,0,0,0,0,0,0
+    Check: 'false'
+- designator: C3
+  type: capacitor
+  value: 1uF
+  footprint: C0603
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A105KB8NNNC
+  supplier_part: C15849
+  placement:
+    x_mm: 2.54
+    y_mm: 7.493
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_GND
+    '2': CAN_5V_IN
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 50V
+  bom_data:
+    No.: '3'
+    Quantity: '3'
+    Comment: 1uF
+    Designator: C3,C6,C7
+    Footprint: C0603
+    Value: 1uF
+    Manufacturer Part: CL10A105KB8NNNC
+    Manufacturer: SAMSUNG(三星)
+    Supplier Part: C15849
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0008'
+    Tolerance: ±10%
+    LCSC Part Name: 1uF ±10% 50V
+    Primary Category: Capacitors
+    Secondary Category: Multilayer Ceramic Capacitors MLCC - SMD/SMT
+    Device: CL10A105KB8NNNC
+    Name: 1uF
+    Unique ID: gge230,gge230_1,gge231
+    Pin Count: '2'
+    JLCPCB Stock: '14326718'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: C0603_L1.6-W0.8-H0.8
+    3D Model Transform: 62.992,31.496,0,0,0,0,0,0,0
+    Check: 'false'
+- designator: C4
+  type: capacitor
+  value: 10uF
+  footprint: C0603
+  comment: 10uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A106MA8NRNC
+  supplier_part: C96446
+  placement:
+    x_mm: -3.81
+    y_mm: -9.398
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 5V
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10uF ±20% 25V
+  bom_data:
+    No.: '1'
+    Quantity: '2'
+    Comment: 10uF
+    Designator: C1,C4
+    Footprint: C0603
+    Value: 10uF
+    Manufacturer Part: CL10A106MA8NRNC
+    Manufacturer: SAMSUNG(三星)
+    Supplier Part: C96446
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0026'
+    Tolerance: ±20%
+    LCSC Part Name: 10uF ±20% 25V
+    Primary Category: Capacitors
+    Secondary Category: Multilayer Ceramic Capacitors MLCC - SMD/SMT
+    Device: CL10A106MA8NRNC
+    Name: 10uF
+    Unique ID: gge224,gge227
+    Pin Count: '2'
+    JLCPCB Stock: '2206271'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: C0603_L1.6-W0.8-H0.8
+    3D Model Transform: 62.992,31.496,0,0,0,0,0,0,0
+    Check: 'false'
+- designator: C5
+  type: capacitor
+  value: 100nF
+  footprint: C0603
+  comment: 100nF
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: CC0603KRX7R9BB104
+  supplier_part: C14663
+  placement:
+    x_mm: -3.81
+    y_mm: -7.493
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 5V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 50V
+  bom_data:
+    No.: '2'
+    Quantity: '2'
+    Comment: 100nF
+    Designator: C2,C5
+    Footprint: C0603
+    Value: 100nF
+    Manufacturer Part: CC0603KRX7R9BB104
+    Manufacturer: YAGEO(国巨)
+    Supplier Part: C14663
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0004'
+    Tolerance: ±10%
+    LCSC Part Name: 100nF ±10% 50V
+    Primary Category: Capacitors
+    Secondary Category: Multilayer Ceramic Capacitors MLCC - SMD/SMT
+    Device: CC0603KRX7R9BB104
+    Name: 100nF
+    Unique ID: gge228,gge229
+    Pin Count: '2'
+    JLCPCB Stock: '53593823'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: C0603_L1.6-W0.8-H0.8
+    3D Model Transform: 62.992,31.496,0,0,0,0,0,0,0
+    Check: 'false'
+- designator: C6
+  type: capacitor
+  value: 1uF
+  footprint: C0603
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A105KB8NNNC
+  supplier_part: C15849
+  placement:
+    x_mm: 3.81
+    y_mm: -7.493
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 50V
+  bom_data:
+    No.: '3'
+    Quantity: '3'
+    Comment: 1uF
+    Designator: C3,C6,C7
+    Footprint: C0603
+    Value: 1uF
+    Manufacturer Part: CL10A105KB8NNNC
+    Manufacturer: SAMSUNG(三星)
+    Supplier Part: C15849
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0008'
+    Tolerance: ±10%
+    LCSC Part Name: 1uF ±10% 50V
+    Primary Category: Capacitors
+    Secondary Category: Multilayer Ceramic Capacitors MLCC - SMD/SMT
+    Device: CL10A105KB8NNNC
+    Name: 1uF
+    Unique ID: gge230,gge230_1,gge231
+    Pin Count: '2'
+    JLCPCB Stock: '14326718'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: C0603_L1.6-W0.8-H0.8
+    3D Model Transform: 62.992,31.496,0,0,0,0,0,0,0
+    Check: 'false'
+- designator: C7
+  type: capacitor
+  value: 1uF
+  footprint: C0603
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A105KB8NNNC
+  supplier_part: C15849
+  placement:
+    x_mm: 6.985
+    y_mm: -11.43
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 5V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 50V
+  bom_data:
+    No.: '3'
+    Quantity: '3'
+    Comment: 1uF
+    Designator: C3,C6,C7
+    Footprint: C0603
+    Value: 1uF
+    Manufacturer Part: CL10A105KB8NNNC
+    Manufacturer: SAMSUNG(三星)
+    Supplier Part: C15849
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0008'
+    Tolerance: ±10%
+    LCSC Part Name: 1uF ±10% 50V
+    Primary Category: Capacitors
+    Secondary Category: Multilayer Ceramic Capacitors MLCC - SMD/SMT
+    Device: CL10A105KB8NNNC
+    Name: 1uF
+    Unique ID: gge230,gge230_1,gge231
+    Pin Count: '2'
+    JLCPCB Stock: '14326718'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: C0603_L1.6-W0.8-H0.8
+    3D Model Transform: 62.992,31.496,0,0,0,0,0,0,0
+    Check: 'false'
+- designator: CN1
+  type: connector
+  value: BM04B-GHS-TBT(LF)(SN)
+  footprint: CONN-SMD_4P-P1.25_BM04B-GHS-TBT-LF-SN
+  comment: BM04B-GHS-TBT(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: BM04B-GHS-TBT(LF)(SN)
+  supplier_part: C161692
+  placement:
+    x_mm: 0.0
+    y_mm: 21.463
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_VCC
+    '2': CAN_HI
+    '3': CAN_LO
+    '4': CAN_GND
+    '5': CAN_GND
+    '6': CAN_GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x4P 间距:1.25mm 立贴 系列:GH
+  bom_data:
+    No.: '4'
+    Quantity: '3'
+    Comment: BM04B-GHS-TBT(LF)(SN)
+    Designator: CN1,CN2,CN3
+    Footprint: CONN-SMD_4P-P1.25_BM04B-GHS-TBT-LF-SN
+    Manufacturer Part: BM04B-GHS-TBT(LF)(SN)
+    Manufacturer: JST
+    Supplier Part: C161692
+    Supplier: LCSC
+    JLCPCB Part Class: Extended Part
+    JLCPCB Price: '0.0284'
+    LCSC Part Name: 1x4P 间距:1.25mm 立贴 系列:GH
+    Primary Category: Connectors
+    Secondary Category: Wire To Board Connector
+    Device: BM04B-GHS-TBT(LF)(SN)
+    Name: BM04B-GHS-TBT(LF)(SN)
+    Unique ID: gge240,gge241,gge242
+    Pin Count: '6'
+    JLCPCB Stock: '0'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: CONN-SMD_GH1.25-LS-4P
+    3D Model Transform: 324.8025,195.2752,0,0,0,0,0,-17.874,0
+    Check: 'false'
+    Colour: White
+    Contact Material: Phosphor Bronze
+    Contact Plating: Tin
+- designator: CN2
+  type: connector
+  value: BM04B-GHS-TBT(LF)(SN)
+  footprint: CONN-SMD_4P-P1.25_BM04B-GHS-TBT-LF-SN
+  comment: BM04B-GHS-TBT(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: BM04B-GHS-TBT(LF)(SN)
+  supplier_part: C161692
+  placement:
+    x_mm: 0.0
+    y_mm: 14.859
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_VCC
+    '2': CAN_HI
+    '3': CAN_LO
+    '4': CAN_GND
+    '5': CAN_GND
+    '6': CAN_GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x4P 间距:1.25mm 立贴 系列:GH
+  bom_data:
+    No.: '4'
+    Quantity: '3'
+    Comment: BM04B-GHS-TBT(LF)(SN)
+    Designator: CN1,CN2,CN3
+    Footprint: CONN-SMD_4P-P1.25_BM04B-GHS-TBT-LF-SN
+    Manufacturer Part: BM04B-GHS-TBT(LF)(SN)
+    Manufacturer: JST
+    Supplier Part: C161692
+    Supplier: LCSC
+    JLCPCB Part Class: Extended Part
+    JLCPCB Price: '0.0284'
+    LCSC Part Name: 1x4P 间距:1.25mm 立贴 系列:GH
+    Primary Category: Connectors
+    Secondary Category: Wire To Board Connector
+    Device: BM04B-GHS-TBT(LF)(SN)
+    Name: BM04B-GHS-TBT(LF)(SN)
+    Unique ID: gge240,gge241,gge242
+    Pin Count: '6'
+    JLCPCB Stock: '0'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: CONN-SMD_GH1.25-LS-4P
+    3D Model Transform: 324.8025,195.2752,0,0,0,0,0,-17.874,0
+    Check: 'false'
+    Colour: White
+    Contact Material: Phosphor Bronze
+    Contact Plating: Tin
+- designator: CN3
+  type: connector
+  value: BM04B-GHS-TBT(LF)(SN)
+  footprint: CONN-SMD_4P-P1.25_BM04B-GHS-TBT-LF-SN
+  comment: BM04B-GHS-TBT(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: BM04B-GHS-TBT(LF)(SN)
+  supplier_part: C161692
+  placement:
+    x_mm: -2.54
+    y_mm: -16.002
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': CAN_RX
+    '2': CAN_TX
+    '3': GND
+    '4': 5V
+    '5': GND
+    '6': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x4P 间距:1.25mm 立贴 系列:GH
+  bom_data:
+    No.: '4'
+    Quantity: '3'
+    Comment: BM04B-GHS-TBT(LF)(SN)
+    Designator: CN1,CN2,CN3
+    Footprint: CONN-SMD_4P-P1.25_BM04B-GHS-TBT-LF-SN
+    Manufacturer Part: BM04B-GHS-TBT(LF)(SN)
+    Manufacturer: JST
+    Supplier Part: C161692
+    Supplier: LCSC
+    JLCPCB Part Class: Extended Part
+    JLCPCB Price: '0.0284'
+    LCSC Part Name: 1x4P 间距:1.25mm 立贴 系列:GH
+    Primary Category: Connectors
+    Secondary Category: Wire To Board Connector
+    Device: BM04B-GHS-TBT(LF)(SN)
+    Name: BM04B-GHS-TBT(LF)(SN)
+    Unique ID: gge240,gge241,gge242
+    Pin Count: '6'
+    JLCPCB Stock: '0'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: CONN-SMD_GH1.25-LS-4P
+    3D Model Transform: 324.8025,195.2752,0,0,0,0,0,-17.874,0
+    Check: 'false'
+    Colour: White
+    Contact Material: Phosphor Bronze
+    Contact Plating: Tin
+- designator: D1
+  type: diode
+  value: ESDCAN03-2BWY
+  footprint: SOT-323-3_L2.0-W1.3-P1.30-LS2.1-BR
+  comment: ESDCAN03-2BWY
+  manufacturer: ST(意法半导体)
+  manufacturer_part: ESDCAN03-2BWY
+  supplier_part: C1973833
+  placement:
+    x_mm: 0.0
+    y_mm: 9.906
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': CAN_LO
+    '2': CAN_HI
+    '3': CAN_GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: ESDCAN03 2BWY
+  bom_data:
+    No.: '5'
+    Quantity: '1'
+    Comment: ESDCAN03-2BWY
+    Designator: D1
+    Footprint: SOT-323-3_L2.0-W1.3-P1.30-LS2.1-BR
+    Manufacturer Part: ESDCAN03-2BWY
+    Manufacturer: ST(意法半导体)
+    Supplier Part: C1973833
+    Supplier: LCSC
+    JLCPCB Part Class: Extended Part
+    JLCPCB Price: '0.0211'
+    LCSC Part Name: ESDCAN03 2BWY
+    Primary Category: Circuit Protection
+    Secondary Category: ESD and Surge Protection (TVS/ESD)
+    Device: ESDCAN03-2BWY
+    Name: ESDCAN03-2BWY
+    Unique ID: gge223
+    Pin Count: '3'
+    JLCPCB Stock: '498'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: SOT-323-3_L2.0-W1.3-H1.0-LS2.1-P1.30
+    3D Model Transform: 78.74,82.677,0,90,0,0,0.0005,0,0
+    Breakdown Voltage: 26.5V
+    Check: 'false'
+- designator: L1
+  type: inductor
+  value: GZ1608D601TF
+  footprint: L0603
+  comment: GZ1608D601TF
+  manufacturer: Sunlord(顺络)
+  manufacturer_part: GZ1608D601TF
+  supplier_part: C1002
+  placement:
+    x_mm: 3.937
+    y_mm: 9.398
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_5V_OUT
+    '2': CAN_5V_IN
+  tolerance: ±25%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 单路 0603磁珠 阻抗600Ω@100MHz
+  bom_data:
+    No.: '6'
+    Quantity: '1'
+    Comment: GZ1608D601TF
+    Designator: L1
+    Footprint: L0603
+    Manufacturer Part: GZ1608D601TF
+    Manufacturer: Sunlord(顺络)
+    Supplier Part: C1002
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0012'
+    Tolerance: ±25%
+    LCSC Part Name: 单路 0603磁珠 阻抗600Ω@100MHz
+    Primary Category: Filters
+    Secondary Category: Ferrite Beads
+    Device: GZ1608D601TF
+    Name: GZ1608D601TF
+    Unique ID: gge226
+    Pin Count: '2'
+    JLCPCB Stock: '696077'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: L0603_L1.6-W0.8-H0.5_BEAD
+    3D Model Transform: 62.992,31.496,0,180,0,0,0.094,0.629,0
+    Check: 'false'
+    Circuits: '1'
+- designator: R1
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: -1.016
+    y_mm: -8.763
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': CAN_TX
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10kΩ ±1% 62.5mW 厚膜电阻
+  bom_data:
+    No.: '7'
+    Quantity: '1'
+    Comment: 10kΩ
+    Designator: R1
+    Footprint: R0402
+    Value: 10kΩ
+    Manufacturer Part: 0402WGF1002TCE
+    Manufacturer: UNI-ROYAL(厚声)
+    Supplier Part: C25744
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0001'
+    Tolerance: ±1%
+    LCSC Part Name: 10kΩ ±1% 62.5mW 厚膜电阻
+    Primary Category: Resistors
+    Secondary Category: Chip Resistor - Surface Mount
+    Device: 0402WGF1002TCE
+    Name: 10kΩ
+    Unique ID: gge195
+    Pin Count: '2'
+    JLCPCB Stock: '14704803'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: R0402_L1.0-W0.5-H0.5
+    3D Model Transform: 39.37,19.685,0,0,0,0,0,0.0005,0
+    Check: 'false'
+- designator: R2
+  type: resistor
+  value: 33Ω
+  footprint: R0402
+  comment: 33Ω
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF330JTCE
+  supplier_part: C25105
+  placement:
+    x_mm: 0.635
+    y_mm: -8.763
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': CAN_RX
+    '2': $1N993
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 33Ω ±1% 62.5mW 厚膜电阻
+  bom_data:
+    No.: '8'
+    Quantity: '1'
+    Comment: 33Ω
+    Designator: R2
+    Footprint: R0402
+    Value: 33Ω
+    Manufacturer Part: 0402WGF330JTCE
+    Manufacturer: UNI-ROYAL(厚声)
+    Supplier Part: C25105
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0001'
+    Tolerance: ±1%
+    LCSC Part Name: 33Ω ±1% 62.5mW 厚膜电阻
+    Primary Category: Resistors
+    Secondary Category: Chip Resistor - Surface Mount
+    Device: 0402WGF330JTCE
+    Name: 33Ω
+    Unique ID: gge199_3
+    Pin Count: '2'
+    JLCPCB Stock: '3161755'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: R0402_L1.0-W0.5-H0.5
+    3D Model Transform: 39.37,19.685,0,0,0,0,0,0.0005,0
+    Check: 'false'
+- designator: U1
+  type: ic
+  value: CA-IS2062VW
+  footprint: CA-IS305XW
+  comment: CA-IS2062VW
+  manufacturer: Chipanalog(川土微)
+  manufacturer_part: CA-IS2062VW
+  supplier_part: C5271191
+  placement:
+    x_mm: 0.0
+    y_mm: 0.0
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 5V
+    '2': GND
+    '3': CAN_TX
+    '5': $1N993
+    '7': 3.3V
+    '8': GND
+    '9': CAN_GND
+    '10': CAN_GND
+    '11': CAN_5V_IN
+    '12': CAN_LO
+    '13': CAN_HI
+    '15': CAN_GND
+    '16': CAN_5V_OUT
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: CA-IS2062VW
+  bom_data:
+    No.: '9'
+    Quantity: '1'
+    Comment: CA-IS2062VW
+    Designator: U1
+    Footprint: CA-IS305XW
+    Manufacturer Part: CA-IS2062VW
+    Manufacturer: Chipanalog(川土微)
+    Supplier Part: C5271191
+    Supplier: LCSC
+    JLCPCB Part Class: Extended Part
+    JLCPCB Price: '0.3316'
+    LCSC Part Name: CA-IS2062VW
+    Primary Category: Signal Isolation Devices
+    Secondary Category: Isolated CAN Transceivers (with Power)
+    Device: CA-IS2062VW
+    Name: CA-IS2062VW
+    Unique ID: gge220
+    Pin Count: '16'
+    JLCPCB Stock: '1090'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: WSOIC-16_L10.3-W7.5-H2.5-LS10.3-P1.27
+    3D Model Transform: 405.51100750923155,405.51100750923155,106.29900011733173,0,0,0,0,0,0
+    Check: 'false'
+    CMTI(kV/us): 150kV/us
+- designator: U2
+  type: ic
+  value: XC6206P332MR-G
+  footprint: SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR
+  comment: XC6206P332MR-G
+  manufacturer: TOREX(特瑞仕)
+  manufacturer_part: XC6206P332MR-G
+  supplier_part: C5446
+  placement:
+    x_mm: 4.064
+    y_mm: -10.922
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+    '3': 5V
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 输入6V 输出3.3V 200mA
+  bom_data:
+    No.: '10'
+    Quantity: '1'
+    Comment: XC6206P332MR-G
+    Designator: U2
+    Footprint: SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR
+    Manufacturer Part: XC6206P332MR-G
+    Manufacturer: TOREX(特瑞仕)
+    Supplier Part: C5446
+    Supplier: LCSC
+    JLCPCB Part Class: Basic Part
+    JLCPCB Price: '0.0152'
+    LCSC Part Name: 输入6V 输出3.3V 200mA
+    Primary Category: Power Management (PMIC)
+    Secondary Category: Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    Device: XC6206P332MR-G_C5446
+    Name: XC6206P332MR-G
+    Unique ID: gge235
+    Pin Count: '3'
+    JLCPCB Stock: '581959'
+    Layer: T
+    Mounting Style: SMT
+    Add into BOM: 'yes'
+    3D Model Title: SOT-23-3L_L2.9-W1.6-H1.1-LS2.8-P0.95
+    3D Model Transform: 114.173,110.236,0,90,0,0,0,0,0
+    Check: 'false'
+nets:
+- name: $1N993
+  connections:
+  - R2-2
+  - U1-5
+- name: 3.3V
+  connections:
+  - C6-2
+  - R1-2
+  - U1-7
+  - U2-2
+- name: 5V
+  connections:
+  - C4-2
+  - C5-2
+  - C7-2
+  - CN3-4
+  - U1-1
+  - U2-3
+- name: CAN_5V_IN
+  connections:
+  - C3-2
+  - L1-2
+  - U1-11
+- name: CAN_5V_OUT
+  connections:
+  - C1-2
+  - C2-2
+  - L1-1
+  - U1-16
+- name: CAN_GND
+  connections:
+  - C1-1
+  - C2-1
+  - C3-1
+  - CN1-4
+  - CN1-5
+  - CN1-6
+  - CN2-4
+  - CN2-5
+  - CN2-6
+  - D1-3
+  - U1-10
+  - U1-15
+  - U1-9
+- name: CAN_HI
+  connections:
+  - CN1-2
+  - CN2-2
+  - D1-2
+  - U1-13
+- name: CAN_LO
+  connections:
+  - CN1-3
+  - CN2-3
+  - D1-1
+  - U1-12
+- name: CAN_RX
+  connections:
+  - CN3-1
+  - R2-1
+- name: CAN_TX
+  connections:
+  - CN3-2
+  - R1-1
+  - U1-3
+- name: CAN_VCC
+  connections:
+  - CN1-1
+  - CN2-1
+- name: GND
+  connections:
+  - C4-1
+  - C5-1
+  - C6-1
+  - C7-1
+  - CN3-3
+  - CN3-5
+  - CN3-6
+  - U1-2
+  - U1-8
+  - U2-1
+statistics:
+  component_types:
+    capacitor: 7
+    connector: 3
+    diode: 1
+    inductor: 1
+    resistor: 2
+    ic: 2

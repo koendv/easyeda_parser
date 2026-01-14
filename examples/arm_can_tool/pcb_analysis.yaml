@@ -1,0 +1,4333 @@
+metadata:
+  component_count: 169
+  net_count: 136
+  verbosity_level: 4
+  verbosity_description: 'DETAILED: + Tolerance, JLCPCB/LCSC details'
+  generation_timestamp: '2026-01-15T16:08:13.689753'
+  generator: EasyEDA Parser v1.0
+  data_sources:
+    bom: 'Bill of Materials: Component specifications, values, manufacturers'
+    pickplace: 'Pick & Place: Physical coordinates, rotation, layer for assembly'
+    netlist: 'Netlist: Electrical pin-to-pin connectivity'
+  coordinate_system:
+    units: millimeters (mm)
+    origin: Bottom-left corner of PCB (standard PCB manufacturing coordinates)
+    x_axis: Horizontal, increasing to the right
+    y_axis: Vertical, increasing upward
+    rotation: Degrees, counter-clockwise positive (0° = component oriented as in datasheet)
+    placement_reference: Coordinates are from the component center (Mid X, Mid Y)
+    estimated_board_size: 65.4mm × 103.1mm
+    component_extent: &id001
+      min_x_mm: 1.7
+      max_x_mm: 57.0
+      min_y_mm: 3.9
+      max_y_mm: 97.0
+      width_mm: 55.4
+      height_mm: 93.1
+  layer_codes:
+    T: Top layer (components on top side of PCB)
+    B: Bottom layer (components on bottom side)
+  interpretation_notes:
+  - Component types (R=resistor, C=capacitor, L=inductor, U=IC, etc.) are inferred from designator prefixes
+  - Placement coordinates show physical layout - components near each other are functionally related
+  - Net connections show electrical connectivity - components on same net are electrically connected
+  - Rotation 0° means component oriented as shown in datasheet, 90° means rotated 90° counter-clockwise
+  - This data comes from EasyEDA Pro exports and preserves all original information
+  board_dimensions:
+    width_mm: 65.4
+    height_mm: 103.1
+    estimated_board_size: 65.4mm × 103.1mm
+    component_extent: *id001
+    note: Dimensions estimated from component placement with 5mm margin
+components:
+- designator: BT1
+  type: battery
+  value: MY-1220-03
+  footprint: BAT-SMD_MY-1220-03
+  comment: MY-1220-03
+  manufacturer: MYOUNG(美阳)
+  manufacturer_part: MY-1220-03
+  supplier_part: C964818
+  placement:
+    x_mm: 5.08
+    y_mm: 59.69
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': VBAT
+    '2': VBAT
+    '3': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: MY-1220-03
+- designator: C1
+  type: capacitor
+  value: 100nF
+  footprint: C0603
+  comment: 100nF
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: CC0603KRX7R9BB104
+  supplier_part: C14663
+  placement:
+    x_mm: 12.065
+    y_mm: 85.725
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_GND
+    '2': CAN_5V_OUT
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 50V
+- designator: C2
+  type: capacitor
+  value: 10uF
+  footprint: C0603
+  comment: 10uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A106MA8NRNC
+  supplier_part: C96446
+  placement:
+    x_mm: 12.065
+    y_mm: 87.63
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_GND
+    '2': CAN_5V_OUT
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10uF ±20% 25V
+- designator: C3
+  type: capacitor
+  value: 1uF
+  footprint: C0603
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A105KB8NNNC
+  supplier_part: C15849
+  placement:
+    x_mm: 19.304
+    y_mm: 85.725
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_GND
+    '2': CAN_5V_IN
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 50V
+- designator: C4
+  type: capacitor
+  value: 4.7uF
+  footprint: C0603
+  comment: 4.7uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A475KO8NNNC
+  supplier_part: C19666
+  placement:
+    x_mm: 43.81
+    y_mm: 82.677
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VSD
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7uF ±10% 16V
+- designator: C5
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 42.037
+    y_mm: 79.629
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': VSD
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C6
+  type: capacitor
+  value: 22uF
+  footprint: C0603
+  comment: 22uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A226MQ8NRNC
+  supplier_part: C59461
+  placement:
+    x_mm: 50.8
+    y_mm: 77.343
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 22uF ±20% 6.3V
+- designator: C7
+  type: capacitor
+  value: 100nF
+  footprint: C0603
+  comment: 100nF
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: CC0603KRX7R9BB104
+  supplier_part: C14663
+  placement:
+    x_mm: 12.065
+    y_mm: 70.739
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 5V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 50V
+- designator: C8
+  type: capacitor
+  value: 4.7uF
+  footprint: C0603
+  comment: 4.7uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A475KO8NNNC
+  supplier_part: C19666
+  placement:
+    x_mm: 50.8
+    y_mm: 73.533
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 5V
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 16V 4.7uF X5R ±10%
+- designator: C9
+  type: capacitor
+  value: 22pF
+  footprint: C0402
+  comment: 22pF
+  manufacturer: FH(风华)
+  manufacturer_part: 0402CG220J500NT
+  supplier_part: C1555
+  placement:
+    x_mm: 54.991
+    y_mm: 71.501
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': VFB
+    '2': 3.3V
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 50V 22pF C0G ±5%
+- designator: C10
+  type: capacitor
+  value: 10uF
+  footprint: C0603
+  comment: 10uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A106MA8NRNC
+  supplier_part: C96446
+  placement:
+    x_mm: 12.065
+    y_mm: 68.834
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 5V
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10uF ±20% 25V
+- designator: C11
+  type: capacitor
+  value: 1uF
+  footprint: C0603
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL10A105KB8NNNC
+  supplier_part: C15849
+  placement:
+    x_mm: 19.685
+    y_mm: 70.739
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 50V
+- designator: C12
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 18.923
+    y_mm: 66.421
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C13
+  type: capacitor
+  value: 100nF
+  footprint: C0603
+  comment: 100nF
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: CC0603KRX7R9BB104
+  supplier_part: C14663
+  placement:
+    x_mm: 27.051
+    y_mm: 65.151
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 12V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 50V
+- designator: C14
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 30.226
+    y_mm: 63.754
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C15
+  type: capacitor
+  value: 100nF
+  footprint: C0603
+  comment: 100nF
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: CC0603KRX7R9BB104
+  supplier_part: C14663
+  placement:
+    x_mm: 32.766
+    y_mm: 64.516
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 12V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 50V
+- designator: C16
+  type: capacitor
+  value: 10uF
+  footprint: C0805
+  comment: 10uF
+  manufacturer: muRata(村田)
+  manufacturer_part: GRM21BR61H106KE43L
+  supplier_part: C440198
+  placement:
+    x_mm: 53.467
+    y_mm: 65.913
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 12V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10uF ±10% 50V
+- designator: C17
+  type: capacitor
+  value: 2.2uF
+  footprint: C0805
+  comment: 2.2uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL21A225KBQNNNE
+  supplier_part: C377773
+  placement:
+    x_mm: 26.543
+    y_mm: 62.738
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VCOMH
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 2.2uF ±10% 50V
+- designator: C18
+  type: capacitor
+  value: 4.7uF
+  footprint: C0402
+  comment: 4.7uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A475MP5NRNC
+  supplier_part: C23733
+  placement:
+    x_mm: 30.226
+    y_mm: 62.103
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7uF ±20% 10V
+- designator: C19
+  type: capacitor
+  value: 4.7uF
+  footprint: C0402
+  comment: 4.7uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A475MP5NRNC
+  supplier_part: C23733
+  placement:
+    x_mm: 50.927
+    y_mm: 62.23
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 5V
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7uF ±20% 10V
+- designator: C20
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 45.085
+    y_mm: 57.404
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C21
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 17.018
+    y_mm: 55.499
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VBAT
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C22
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 15.748
+    y_mm: 51.816
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C23
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 29.286
+    y_mm: 52.832
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C24
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 48.387
+    y_mm: 49.53
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VBUS
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C25
+  type: capacitor
+  value: 18pF
+  footprint: C0402
+  comment: 18pF
+  manufacturer: FH(风华)
+  manufacturer_part: 0402CG180J500NT
+  supplier_part: C1549
+  placement:
+    x_mm: 18.161
+    y_mm: 46.228
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': OSC32_OUT
+  tolerance: ±5%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 18pF ±5% 50V
+- designator: C26
+  type: capacitor
+  value: 18pF
+  footprint: C0402
+  comment: 18pF
+  manufacturer: FH(风华)
+  manufacturer_part: 0402CG180J500NT
+  supplier_part: C1549
+  placement:
+    x_mm: 21.463
+    y_mm: 46.228
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': OSC32_IN
+  tolerance: ±5%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 18pF ±5% 50V
+- designator: C27
+  type: capacitor
+  value: 4.7uF
+  footprint: C0402
+  comment: 4.7uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A475MP5NRNC
+  supplier_part: C23733
+  placement:
+    x_mm: 27.051
+    y_mm: 45.974
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±20%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7uF ±20% 10V
+- designator: C28
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 27.051
+    y_mm: 44.323
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C29
+  type: capacitor
+  value: 15pF
+  footprint: C0402
+  comment: 15pF
+  manufacturer: FH(风华)
+  manufacturer_part: 0402CG150J500NT
+  supplier_part: C1548
+  placement:
+    x_mm: 19.05
+    y_mm: 40.894
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': OSC_IN
+    '2': GND
+  tolerance: ±5%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 15pF ±5% 50V
+- designator: C30
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 24.257
+    y_mm: 41.91
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C31
+  type: capacitor
+  value: 15pF
+  footprint: C0402
+  comment: 15pF
+  manufacturer: FH(风华)
+  manufacturer_part: 0402CG150J500NT
+  supplier_part: C1548
+  placement:
+    x_mm: 16.256
+    y_mm: 38.1
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': OSC_OUT
+  tolerance: ±5%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 15pF ±5% 50V
+- designator: C32
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 23.876
+    y_mm: 36.195
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V_ANA
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C33
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 37.338
+    y_mm: 36.576
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C34
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 18.796
+    y_mm: 33.401
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V_ANA
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C35
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 20.955
+    y_mm: 34.163
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': RST
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C36
+  type: capacitor
+  value: 4.7nF
+  footprint: C0402
+  comment: 4.7nF
+  manufacturer: FH(风华)
+  manufacturer_part: 0402B472K500NT
+  supplier_part: C1538
+  placement:
+    x_mm: 48.641
+    y_mm: 30.861
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': $1N254540
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7nF ±10% 50V
+- designator: C37
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 8.128
+    y_mm: 23.622
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C38
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 28.067
+    y_mm: 22.987
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $2N788708
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C39
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 30.988
+    y_mm: 22.987
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $2N788818
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C40
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 33.909
+    y_mm: 22.987
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $2N788938
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C41
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 12.7
+    y_mm: 19.177
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C42
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 21.336
+    y_mm: 16.129
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C43
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 23.368
+    y_mm: 18.669
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C44
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 25.654
+    y_mm: 18.542
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C45
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 39.624
+    y_mm: 19.177
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C46
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 47.879
+    y_mm: 16.891
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C47
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 8.509
+    y_mm: 13.843
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': ADC_VIO
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C48
+  type: capacitor
+  value: 1uF
+  footprint: C0402
+  comment: 1uF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05A105KA5NQNC
+  supplier_part: C52923
+  placement:
+    x_mm: 19.304
+    y_mm: 11.43
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VIO
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1uF ±10% 25V
+- designator: C49
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 21.082
+    y_mm: 11.43
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: C50
+  type: capacitor
+  value: 100nF
+  footprint: C0402
+  comment: 100nF
+  manufacturer: SAMSUNG(三星)
+  manufacturer_part: CL05B104KO5NNNC
+  supplier_part: C1525
+  placement:
+    x_mm: 46.482
+    y_mm: 11.43
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': GND
+  tolerance: ±10%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100nF ±10% 16V
+- designator: CARD1
+  type: unknown
+  value: TF-01
+  footprint: TF-SMD_TF-02
+  comment: TF-01
+  manufacturer: Yuandi(元迪)
+  manufacturer_part: TF-01
+  supplier_part: C2889257
+  placement:
+    x_mm: 41.656
+    y_mm: 90.678
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '2': SD_CS
+    '3': SPI2_MOSI
+    '4': VSD
+    '5': SPI2_CLK
+    '6': GND
+    '7': $2N508660
+    '9': SD_DETECT
+    '10': GND
+    '11': GND
+    '12': GND
+    '13': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 自弹式 MicroSD卡(TF卡) 卡座
+- designator: CN1
+  type: connector
+  value: SM06B-GHS-TB(LF)(SN)
+  footprint: CONN-TH_SM06B-GHS-TB-LF-SN
+  comment: SM06B-GHS-TB(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: SM06B-GHS-TB(LF)(SN)
+  supplier_part: C133065
+  placement:
+    x_mm: 17.12
+    y_mm: 97.028
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_GND
+    '2': CAN_LO
+    '3': CAN_HI
+    '4': CAN_LO
+    '5': CAN_HI
+    '6': CAN_GND
+    '7': CAN_GND
+    '8': CAN_GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x6P 间距:1.25mm 卧贴 系列:GH
+- designator: CN2
+  type: connector
+  value: SM04B-SRSS-TB(LF)(SN)
+  footprint: CONN-SMD_4P-P1.00_SM04B-SRSS-TB-LF-SN
+  comment: SM04B-SRSS-TB(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: SM04B-SRSS-TB(LF)(SN)
+  supplier_part: C160404
+  placement:
+    x_mm: 3.175
+    y_mm: 22.098
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 3.3V
+    '3': I2C3_SDA
+    '4': I2C3_SCL
+    '5': GND
+    '6': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x4P 间距:1mm 卧贴 系列:SR/SZ
+- designator: CN3
+  type: connector
+  value: SM06B-GHS-TB(LF)(SN)
+  footprint: CONN-TH_SM06B-GHS-TB-LF-SN
+  comment: SM06B-GHS-TB(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: SM06B-GHS-TB(LF)(SN)
+  supplier_part: C133065
+  placement:
+    x_mm: 56.591
+    y_mm: 20.32
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': CONSOLE_TXD
+    '3': CONSOLE_RXD
+    '4': SYS_SWDIO
+    '5': SYS_SWCLK
+    '6': GND
+    '7': GND
+    '8': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x6P 间距:1.25mm 卧贴 系列:GH
+- designator: CN4
+  type: connector
+  value: SM06B-GHS-TB(LF)(SN)
+  footprint: CONN-TH_SM06B-GHS-TB-LF-SN
+  comment: SM06B-GHS-TB(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: SM06B-GHS-TB(LF)(SN)
+  supplier_part: C133065
+  placement:
+    x_mm: 16.764
+    y_mm: 3.937
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': T_TXD
+    '3': T_RXD
+    '4': T_SWDIO
+    '5': T_SWCLK
+    '6': GND
+    '7': GND
+    '8': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x6P 间距:1.25mm 卧贴 系列:GH
+- designator: CN5
+  type: connector
+  value: SM06B-GHS-TB(LF)(SN)
+  footprint: CONN-TH_SM06B-GHS-TB-LF-SN
+  comment: SM06B-GHS-TB(LF)(SN)
+  manufacturer: JST
+  manufacturer_part: SM06B-GHS-TB(LF)(SN)
+  supplier_part: C133065
+  placement:
+    x_mm: 44.196
+    y_mm: 3.937
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': T_AUX_TXD
+    '3': T_AUX_RXD
+    '4': T_SWO
+    '5': T_RST
+    '6': GND
+    '7': GND
+    '8': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1x6P 间距:1.25mm 卧贴 系列:GH
+- designator: D1
+  type: diode
+  value: ESDCAN03-2BWY
+  footprint: SOT-323-3_L2.0-W1.3-P1.30-LS2.1-BR
+  comment: ESDCAN03-2BWY
+  manufacturer: ST(意法半导体)
+  manufacturer_part: ESDCAN03-2BWY
+  supplier_part: C1973833
+  placement:
+    x_mm: 15.875
+    y_mm: 91.948
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': CAN_LO
+    '2': CAN_HI
+    '3': CAN_GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: ESDCAN03 2BWY
+- designator: D2
+  type: diode
+  value: H5VU25U
+  footprint: DFN2510-10_L2.5-W1.0-P0.50-BL
+  comment: H5VU25U
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VU25U
+  supplier_part: C7420374
+  placement:
+    x_mm: 40.005
+    y_mm: 76.2
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SD_CS
+    '2': GND
+    '3': GND
+    '4': GND
+    '5': SPI2_MOSI
+    '6': SPI2_MOSI
+    '7': GND
+    '8': GND
+    '9': GND
+    '10': SD_CS
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VU25U
+- designator: D3
+  type: diode
+  value: H5VU25U
+  footprint: DFN2510-10_L2.5-W1.0-P0.50-BL
+  comment: H5VU25U
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VU25U
+  supplier_part: C7420374
+  placement:
+    x_mm: 44.811
+    y_mm: 78.232
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SPI2_CLK
+    '2': GND
+    '3': GND
+    '4': SPI2_MISO
+    '5': SD_DETECT
+    '6': SD_DETECT
+    '7': SPI2_MISO
+    '8': GND
+    '9': GND
+    '10': SPI2_CLK
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VU25U
+- designator: D4
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 5.588
+    y_mm: 43.688
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': BOOT0
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D5
+  type: diode
+  value: SMF5.0A
+  footprint: SOD-123FL_L2.7-W1.8-LS3.8-RD
+  comment: SMF5.0A
+  manufacturer: R+O(宏嘉诚)
+  manufacturer_part: SMF5.0A
+  supplier_part: C19077497
+  placement:
+    x_mm: 49.784
+    y_mm: 42.164
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': HS_VBUS
+    '2': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 单向TVS 5V截止 峰值浪涌电流：21.7A@10/1000us
+- designator: D6
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 5.588
+    y_mm: 34.29
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': RST
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D7
+  type: diode
+  value: H5VU25U
+  footprint: DFN2510-10_L2.5-W1.0-P0.50-BL
+  comment: H5VU25U
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VU25U
+  supplier_part: C7420374
+  placement:
+    x_mm: 45.72
+    y_mm: 34.95
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': HS_DP
+    '2': HS_DM
+    '3': GND
+    '4': GND
+    '5': GND
+    '6': GND
+    '7': GND
+    '8': GND
+    '9': HS_DM
+    '10': HS_DP
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VU25U
+- designator: D8
+  type: diode
+  value: H5VU25U
+  footprint: DFN2510-10_L2.5-W1.0-P0.50-BL
+  comment: H5VU25U
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VU25U
+  supplier_part: C7420374
+  placement:
+    x_mm: 7.62
+    y_mm: 21.082
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': I2C3_SDA
+    '3': GND
+    '4': I2C3_SCL
+    '5': GND
+    '6': GND
+    '7': I2C3_SCL
+    '8': GND
+    '9': I2C3_SDA
+    '10': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VU25U
+- designator: D9
+  type: diode
+  value: H5VU25U
+  footprint: DFN2510-10_L2.5-W1.0-P0.50-BL
+  comment: H5VU25U
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VU25U
+  supplier_part: C7420374
+  placement:
+    x_mm: 51.562
+    y_mm: 20.32
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': SYS_SWCLK
+    '2': SYS_SWDIO
+    '3': GND
+    '4': CONSOLE_RXD
+    '5': CONSOLE_TXD
+    '6': CONSOLE_TXD
+    '7': CONSOLE_RXD
+    '8': GND
+    '9': SYS_SWDIO
+    '10': SYS_SWCLK
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VU25U
+- designator: D10
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 10.414
+    y_mm: 13.716
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': ADC_VIO
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D11
+  type: diode
+  value: H5VU25U
+  footprint: DFN2510-10_L2.5-W1.0-P0.50-BL
+  comment: H5VU25U
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VU25U
+  supplier_part: C7420374
+  placement:
+    x_mm: 16.764
+    y_mm: 8.89
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': T_SWCLK
+    '2': T_SWDIO
+    '3': GND
+    '4': T_RXD
+    '5': T_TXD
+    '6': T_TXD
+    '7': T_RXD
+    '8': GND
+    '9': T_SWDIO
+    '10': T_SWCLK
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VU25U
+- designator: D12
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 27.813
+    y_mm: 9.525
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': SW_NEXT
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D13
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 30.353
+    y_mm: 9.525
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': SW_SELECT
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D14
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 32.893
+    y_mm: 9.525
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': SW_PREV
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D15
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 40.767
+    y_mm: 8.89
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VIO
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D16
+  type: diode
+  value: H5VL10B
+  footprint: SOD-882_L1.0-W0.6-BI
+  comment: H5VL10B
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VL10B
+  supplier_part: C7420372
+  placement:
+    x_mm: 13.31
+    y_mm: 8.941
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VIO
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VL10B
+- designator: D17
+  type: diode
+  value: H5VU25U
+  footprint: DFN2510-10_L2.5-W1.0-P0.50-BL
+  comment: H5VU25U
+  manufacturer: 宏迦橙
+  manufacturer_part: H5VU25U
+  supplier_part: C7420374
+  placement:
+    x_mm: 44.196
+    y_mm: 8.89
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': T_RST
+    '2': T_SWO
+    '3': GND
+    '4': T_AUX_RXD
+    '5': T_AUX_TXD
+    '6': T_AUX_TXD
+    '7': T_AUX_RXD
+    '8': GND
+    '9': T_SWO
+    '10': T_RST
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: H5VU25U
+- designator: FPC1
+  type: unknown
+  value: AFC07-S12ECA-00
+  footprint: FPC-SMD_12P-P0.50_AFC07-S12ECA-00
+  comment: AFC07-S12ECA-00
+  manufacturer: JS(钜硕电子)
+  manufacturer_part: AFC07-S12ECA-00
+  supplier_part: C262585
+  placement:
+    x_mm: 30.48
+    y_mm: 68.633
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': 12V
+    '3': SPI2_MOSI
+    '4': SPI2_CLK
+    '5': DISP_DC
+    '6': DISP_RST
+    '7': DISP_CS
+    '8': IREF
+    '9': 3.3V
+    '10': VCOMH
+    '11': 12V
+    '12': GND
+    '13': GND
+    '14': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 间距:0.5mm P数:12P 抽屉式 上接
+- designator: L1
+  type: inductor
+  value: ACT1210-510-2P-TL00
+  footprint: FILTER-SMD_4P-L3.2-W2.5-BL_ACT1210
+  comment: ACT1210-510-2P-TL00
+  manufacturer: TDK
+  manufacturer_part: ACT1210-510-2P-TL00
+  supplier_part: C95572
+  placement:
+    x_mm: 15.875
+    y_mm: 87.376
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $3N53774
+    '2': $3N53786
+    '3': CAN_LO
+    '4': CAN_HI
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 两路 共模滤波器 阻抗2.6kΩ@10MHz
+- designator: L2
+  type: inductor
+  value: GZ1608D601TF
+  footprint: L0603
+  comment: GZ1608D601TF
+  manufacturer: Sunlord(顺络)
+  manufacturer_part: GZ1608D601TF
+  supplier_part: C1002
+  placement:
+    x_mm: 19.304
+    y_mm: 87.63
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_5V_OUT
+    '2': CAN_5V_IN
+  tolerance: ±25%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 单路 0603磁珠 阻抗600Ω@100MHz
+- designator: L3
+  type: inductor
+  value: 1uH
+  footprint: IND-SMD_L2.5-W2.0-A
+  comment: 1uH
+  manufacturer: TDK
+  manufacturer_part: TFM252012ALM-1R0MTAA
+  supplier_part: C433057
+  placement:
+    x_mm: 53.594
+    y_mm: 80.391
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': VSW
+    '2': 3.3V
+  tolerance: ±20%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 1uH ±20%
+- designator: L4
+  type: inductor
+  value: 10uH
+  footprint: L0603
+  comment: 10uH
+  manufacturer: Sunlord(顺络)
+  manufacturer_part: SDFL1608S100KTF
+  supplier_part: C1035
+  placement:
+    x_mm: 16.51
+    y_mm: 33.528
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': 3.3V_ANA
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10uH ±10% 3mA 1.85Ω
+- designator: LED1
+  type: led
+  value: LTST-S270KGKT
+  footprint: LED-SMD_L1.7-W0.6-RD
+  comment: LTST-S270KGKT
+  manufacturer: LITEON(光宝)
+  manufacturer_part: LTST-S270KGKT
+  supplier_part: C125113
+  placement:
+    x_mm: 1.651
+    y_mm: 13.97
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': $1N206167
+    '2': 3.3V
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 普绿/黄绿 侧贴
+- designator: M1
+  type: mechanical
+  value: ''
+  placement:
+    x_mm: 5.0
+    y_mm: 95.508
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': CAN_GND
+- designator: M2
+  type: mechanical
+  value: ''
+  placement:
+    x_mm: 55.0
+    y_mm: 95.508
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+- designator: M3
+  type: mechanical
+  value: ''
+  placement:
+    x_mm: 5.0
+    y_mm: 5.508
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+- designator: M4
+  type: mechanical
+  value: ''
+  placement:
+    x_mm: 55.0
+    y_mm: 5.508
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+- designator: OLED1
+  type: unknown
+  value: ZJY150-2828KSWKG03
+  footprint: OLED-ZJY150-2828KSWKG03
+  comment: ZJY150-2828KSWKG03
+  manufacturer: Zhengzhou Zhongjingyuan(中景园)
+  manufacturer_part: ZJY150-2828KSWKG03
+  supplier_part: https://item.taobao.com/item.htm?id=756962244579
+  placement:
+    x_mm: 30.48
+    y_mm: 40.538
+    rotation_deg: 0.0
+    layer: B
+- designator: Q1
+  type: transistor
+  value: AO3400A
+  footprint: SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR
+  comment: AO3400A
+  manufacturer: AOS
+  manufacturer_part: AO3400A
+  supplier_part: C20917
+  placement:
+    x_mm: 51.562
+    y_mm: 12.446
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': $3N5450
+    '2': GND
+    '3': T_RST
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1个N沟道 耐压:30V 电流:5.7A
+- designator: R1
+  type: resistor
+  value: 33Ω
+  footprint: R0402
+  comment: 33Ω
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF330JTCE
+  supplier_part: C25105
+  placement:
+    x_mm: 46.228
+    y_mm: 82.677
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': SPI2_MISO
+    '2': $2N508660
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 33Ω ±1% 62.5mW 厚膜电阻
+- designator: R2
+  type: resistor
+  value: 47kΩ
+  footprint: R0402
+  comment: 47kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4702TCE
+  supplier_part: C25792
+  placement:
+    x_mm: 47.371
+    y_mm: 78.232
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': SD_ON
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 47kΩ ±1% 62.5mW 厚膜电阻
+- designator: R3
+  type: resistor
+  value: 47kΩ
+  footprint: R0402
+  comment: 47kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4702TCE
+  supplier_part: C25792
+  placement:
+    x_mm: 39.37
+    y_mm: 71.882
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SD_CS
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 47kΩ ±1% 62.5mW 厚膜电阻
+- designator: R4
+  type: resistor
+  value: 47kΩ
+  footprint: R0402
+  comment: 47kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4702TCE
+  supplier_part: C25792
+  placement:
+    x_mm: 41.402
+    y_mm: 73.914
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SPI2_MOSI
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 47kΩ ±1% 62.5mW 厚膜电阻
+- designator: R5
+  type: resistor
+  value: 47kΩ
+  footprint: R0402
+  comment: 47kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4702TCE
+  supplier_part: C25792
+  placement:
+    x_mm: 45.72
+    y_mm: 75.946
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SPI2_MISO
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 47kΩ ±1% 62.5mW 厚膜电阻
+- designator: R6
+  type: resistor
+  value: 47kΩ
+  footprint: R0402
+  comment: 47kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4702TCE
+  supplier_part: C25792
+  placement:
+    x_mm: 46.609
+    y_mm: 73.914
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': SD_DETECT
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 47kΩ ±1% 62.5mW 厚膜电阻
+- designator: R7
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 46.609
+    y_mm: 71.882
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': FLASH_CS
+  jlcpcb_part_class: Basic Part
+- designator: R8
+  type: resistor
+  value: 33kΩ
+  footprint: R0402
+  comment: 33kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF3302TCE
+  supplier_part: C25779
+  placement:
+    x_mm: 57.023
+    y_mm: 74.803
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': GND
+    '2': VFB
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 33kΩ ±1% 62.5mW 厚膜电阻
+- designator: R9
+  type: resistor
+  value: 150kΩ
+  footprint: R0402
+  comment: 150kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1503TCE
+  supplier_part: C25755
+  placement:
+    x_mm: 57.023
+    y_mm: 71.501
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': VFB
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 150kΩ ±1% 62.5mW 厚膜电阻
+- designator: R10
+  type: resistor
+  value: 33Ω
+  footprint: R0402
+  comment: 33Ω
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF330JTCE
+  supplier_part: C25105
+  placement:
+    x_mm: 16.078
+    y_mm: 70.866
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': CAN_RX
+    '2': $3N53887
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 33Ω ±1% 62.5mW 厚膜电阻
+- designator: R11
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 17.272
+    y_mm: 66.167
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': IRQ_I2C
+    '2': 3.3V
+  jlcpcb_part_class: Basic Part
+- designator: R12
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 20.574
+    y_mm: 66.167
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': RTC
+    '2': 3.3V
+  jlcpcb_part_class: Basic Part
+- designator: R13
+  type: resistor
+  value: 33Ω
+  footprint: R0402
+  comment: 33Ω
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF330JTCE
+  supplier_part: C25105
+  placement:
+    x_mm: 44.958
+    y_mm: 69.85
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': SPI2_MISO
+    '2': $2N741099
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 33Ω ±1% 62.5mW 厚膜电阻
+- designator: R14
+  type: resistor
+  value: 910kΩ
+  footprint: R0402
+  comment: 910kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF9103TCE
+  supplier_part: C25800
+  placement:
+    x_mm: 30.48
+    y_mm: 65.405
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': IREF
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 910kΩ ±1% 62.5mW 厚膜电阻
+- designator: R15
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 13.335
+    y_mm: 51.308
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': CAN_TX
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10kΩ ±1% 62.5mW 厚膜电阻
+- designator: R16
+  type: resistor
+  value: 4.7kΩ
+  footprint: R0402
+  comment: 4.7kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4701TCE
+  supplier_part: C25900
+  placement:
+    x_mm: 21.082
+    y_mm: 53.34
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': I2C1_SCL
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7kΩ ±1% 62.5mW 厚膜电阻
+- designator: R17
+  type: resistor
+  value: 4.7kΩ
+  footprint: R0402
+  comment: 4.7kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4701TCE
+  supplier_part: C25900
+  placement:
+    x_mm: 21.082
+    y_mm: 50.8
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': I2C1_SDA
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7kΩ ±1% 62.5mW 厚膜电阻
+- designator: R18
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 37.287
+    y_mm: 52.832
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': $1N343310
+  jlcpcb_part_class: Basic Part
+- designator: R19
+  type: resistor
+  value: 33Ω
+  footprint: R0402
+  comment: 33Ω
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF330JTCE
+  supplier_part: C25105
+  placement:
+    x_mm: 26.035
+    y_mm: 47.498
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $1N200184
+    '2': CAN_TX
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 33Ω ±1% 62.5mW 厚膜电阻
+- designator: R20
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 7.493
+    y_mm: 43.561
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': BOOT0
+    '2': GND
+  jlcpcb_part_class: Basic Part
+- designator: R21
+  type: resistor
+  value: 5.1kΩ
+  footprint: R0402
+  comment: 5.1kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF5101TCE
+  supplier_part: C25905
+  placement:
+    x_mm: 48.641
+    y_mm: 36.957
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $1N254528
+    '2': GND
+  jlcpcb_part_class: BasicPart
+- designator: R22
+  type: resistor
+  value: 12kΩ
+  footprint: R0402
+  comment: 12kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1202TCE
+  supplier_part: C25752
+  placement:
+    x_mm: 36.678
+    y_mm: 34.341
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': HS_R
+    '2': GND
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 12kΩ ±1% 62.5mW 厚膜电阻
+- designator: R23
+  type: resistor
+  value: 5.1kΩ
+  footprint: R0402
+  comment: 5.1kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF5101TCE
+  supplier_part: C25905
+  placement:
+    x_mm: 48.641
+    y_mm: 33.934
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': $1N254529
+  jlcpcb_part_class: BasicPart
+- designator: R24
+  type: resistor
+  value: 33Ω
+  footprint: R0402
+  comment: 33Ω
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF330JTCE
+  supplier_part: C25105
+  placement:
+    x_mm: 36.957
+    y_mm: 30.861
+    rotation_deg: 315.0
+    layer: T
+  pins:
+    '1': T_RST_OUT
+    '2': $3N5450
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 33Ω ±1% 62.5mW 厚膜电阻
+- designator: R25
+  type: resistor
+  value: 1MΩ
+  footprint: R0402
+  comment: 1MΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1004TCE
+  supplier_part: C26083
+  placement:
+    x_mm: 48.768
+    y_mm: 29.21
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': $1N254540
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 1MΩ ±1% 62.5mW 厚膜电阻
+- designator: R26
+  type: resistor
+  value: 22kΩ
+  footprint: R0402
+  comment: 22kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF2202TCE
+  supplier_part: C25768
+  placement:
+    x_mm: 28.448
+    y_mm: 21.336
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $2N788718
+    '2': $2N788708
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 22kΩ ±1% 62.5mW 厚膜电阻
+- designator: R27
+  type: resistor
+  value: 22kΩ
+  footprint: R0402
+  comment: 22kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF2202TCE
+  supplier_part: C25768
+  placement:
+    x_mm: 30.988
+    y_mm: 21.336
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $2N788825
+    '2': $2N788818
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 22kΩ ±1% 62.5mW 厚膜电阻
+- designator: R28
+  type: resistor
+  value: 22kΩ
+  footprint: R0402
+  comment: 22kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF2202TCE
+  supplier_part: C25768
+  placement:
+    x_mm: 33.528
+    y_mm: 21.336
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $2N788929
+    '2': $2N788938
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 22kΩ ±1% 62.5mW 厚膜电阻
+- designator: R29
+  type: resistor
+  value: 100kΩ
+  footprint: R0402
+  comment: 100kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1003TCE
+  supplier_part: C25741
+  placement:
+    x_mm: 12.7
+    y_mm: 17.653
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $3N4347
+    '2': VIO
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100kΩ ±1% 62.5mW 厚膜电阻
+- designator: R30
+  type: resistor
+  value: 100kΩ
+  footprint: R0402
+  comment: 100kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1003TCE
+  supplier_part: C25741
+  placement:
+    x_mm: 21.336
+    y_mm: 19.177
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $3N4349
+    '2': VIO
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100kΩ ±1% 62.5mW 厚膜电阻
+- designator: R31
+  type: resistor
+  value: 100kΩ
+  footprint: R0402
+  comment: 100kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1003TCE
+  supplier_part: C25741
+  placement:
+    x_mm: 12.7
+    y_mm: 16.129
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $3N4348
+    '2': VIO
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100kΩ ±1% 62.5mW 厚膜电阻
+- designator: R32
+  type: resistor
+  value: 100kΩ
+  footprint: R0402
+  comment: 100kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1003TCE
+  supplier_part: C25741
+  placement:
+    x_mm: 21.336
+    y_mm: 17.653
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $3N4350
+    '2': VIO
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100kΩ ±1% 62.5mW 厚膜电阻
+- designator: R33
+  type: resistor
+  value: 100kΩ
+  footprint: R0402
+  comment: 100kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1003TCE
+  supplier_part: C25741
+  placement:
+    x_mm: 39.624
+    y_mm: 16.129
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $3N5228
+    '2': VIO
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100kΩ ±1% 62.5mW 厚膜电阻
+- designator: R34
+  type: resistor
+  value: 100kΩ
+  footprint: R0402
+  comment: 100kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1003TCE
+  supplier_part: C25741
+  placement:
+    x_mm: 39.624
+    y_mm: 17.653
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $3N5229
+    '2': VIO
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100kΩ ±1% 62.5mW 厚膜电阻
+- designator: R35
+  type: resistor
+  value: 100kΩ
+  footprint: R0402
+  comment: 100kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1003TCE
+  supplier_part: C25741
+  placement:
+    x_mm: 49.911
+    y_mm: 16.891
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': $3N5450
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 100kΩ ±1% 62.5mW 厚膜电阻
+- designator: R36
+  type: resistor
+  value: 150Ω
+  footprint: R0402
+  comment: 150Ω
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1500TCE
+  supplier_part: C25082
+  placement:
+    x_mm: 4.699
+    y_mm: 13.589
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': LED0
+    '2': $1N206167
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 150Ω ±1% 62.5mW 厚膜电阻
+- designator: R37
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 10.414
+    y_mm: 11.43
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': GND
+    '2': ADC_VIO
+  jlcpcb_part_class: Basic Part
+- designator: R38
+  type: resistor
+  value: 4.7kΩ
+  footprint: R0402
+  comment: 4.7kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4701TCE
+  supplier_part: C25900
+  placement:
+    x_mm: 11.938
+    y_mm: 11.43
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': ADC_VIO
+    '2': VIO
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 4.7kΩ ±1% 62.5mW 厚膜电阻
+- designator: R39
+  type: resistor
+  value: 47kΩ
+  footprint: R0402
+  comment: 47kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF4702TCE
+  supplier_part: C25792
+  placement:
+    x_mm: 24.638
+    y_mm: 9.779
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': GND
+    '2': T_POWER_ON
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 47kΩ ±1% 62.5mW 厚膜电阻
+- designator: R40
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 27.94
+    y_mm: 11.176
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SW_NEXT
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10kΩ ±1% 62.5mW 厚膜电阻
+- designator: R41
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 30.48
+    y_mm: 11.176
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SW_SELECT
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10kΩ ±1% 62.5mW 厚膜电阻
+- designator: R42
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 33.02
+    y_mm: 11.176
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SW_PREV
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10kΩ ±1% 62.5mW 厚膜电阻
+- designator: R43
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 41.402
+    y_mm: 11.43
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': T_OE
+    '2': 3.3V
+  tolerance: ±1%
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 10kΩ ±1% 62.5mW 厚膜电阻
+- designator: R44
+  type: resistor
+  value: 10kΩ
+  footprint: R0402
+  comment: 10kΩ
+  manufacturer: UNI-ROYAL(厚声)
+  manufacturer_part: 0402WGF1002TCE
+  supplier_part: C25744
+  placement:
+    x_mm: 48.514
+    y_mm: 11.43
+    rotation_deg: 270.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': T_RST
+  jlcpcb_part_class: Basic Part
+- designator: RN1
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 30.432
+    y_mm: 44.577
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': I2C1_SCL
+    '2': $1N343307
+    '3': $1N343306
+    '4': $1N343305
+    '5': QSPI_IO3
+    '6': QSPI_SCK
+    '7': QSPI_IO0
+    '8': I2C1_SCL
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: RN2
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 34.163
+    y_mm: 45.212
+    rotation_deg: 135.0
+    layer: T
+  pins:
+    '1': GND
+    '2': QSPI_IO2
+    '3': QSPI_IO1
+    '4': QSPI_CS
+    '5': $1N343310
+    '6': $1N343309
+    '7': $1N343308
+    '8': GND
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: RN3
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 37.338
+    y_mm: 39.05
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': $1N200203
+    '2': $1N200201
+    '3': $1N200200
+    '4': $1N200169
+    '5': SD_CS
+    '6': SPI2_MOSI
+    '7': SPI2_CLK
+    '8': FLASH_CS
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: RN4
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 24.257
+    y_mm: 30.226
+    rotation_deg: 315.0
+    layer: T
+  pins:
+    '1': PA0
+    '2': PA1
+    '3': SERIAL_TXD
+    '4': SERIAL_RXD
+    '5': $3N4411
+    '6': $3N4412
+    '7': $3N4413
+    '8': $3N4414
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: RN5
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 27.686
+    y_mm: 30.861
+    rotation_deg: 315.0
+    layer: T
+  pins:
+    '1': PA4
+    '2': PA5
+    '3': PA6
+    '4': PA7
+    '5': $3N4403
+    '6': $3N4404
+    '7': $3N4405
+    '8': $3N4406
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: RN6
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 42.799
+    y_mm: 24.13
+    rotation_deg: 225.0
+    layer: T
+  pins:
+    '1': $3N86563
+    '2': $3N86568
+    '3': $3N86573
+    '4': $3N86578
+    '5': AUX_TXD
+    '6': AUX_RXD
+    '7': AUX_SWO
+    '8': T_RST_IN
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: RN7
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 16.764
+    y_mm: 11.43
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $3N4348
+    '2': $3N4347
+    '3': $3N4349
+    '4': $3N4350
+    '5': T_SWCLK
+    '6': T_SWDIO
+    '7': T_RXD
+    '8': T_TXD
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: RN8
+  type: resistor_array
+  value: 33Ω
+  footprint: RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL
+  comment: 33Ω
+  manufacturer: YAGEO(国巨)
+  manufacturer_part: YC124-FR-0733RL
+  supplier_part: C136851
+  placement:
+    x_mm: 44.196
+    y_mm: 11.43
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': $3N5227
+    '2': $3N5228
+    '3': $3N5229
+    '4': $3N5230
+    '5': T_RST
+    '6': T_SWO
+    '7': T_AUX_RXD
+    '8': T_AUX_TXD
+  tolerance: ±1%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 33Ω ±1% 0402x4
+- designator: SW1
+  type: switch
+  value: TS24CA
+  footprint: SW-SMD_TS24CA
+  comment: TS24CA
+  manufacturer: SHOU HAN(首韩)
+  manufacturer_part: TS24CA
+  supplier_part: C393942
+  placement:
+    x_mm: 1.93
+    y_mm: 42.291
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '3': 3.3V
+    '4': BOOT0
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 4.55*1.8*3.5mm 卧贴 轻触开关
+- designator: SW2
+  type: switch
+  value: TS24CA
+  footprint: SW-SMD_TS24CA
+  comment: TS24CA
+  manufacturer: SHOU HAN(首韩)
+  manufacturer_part: TS24CA
+  supplier_part: C393942
+  placement:
+    x_mm: 1.93
+    y_mm: 32.893
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '3': GND
+    '4': RST
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 4.55*1.8*3.5mm 卧贴 轻触开关
+- designator: SW3
+  type: switch
+  value: SLLB510100
+  footprint: SW-SMD_SLLB510100
+  comment: SLLB510100
+  manufacturer: ALPSALPINE(阿尔卑斯阿尔派)
+  manufacturer_part: SLLB510100
+  supplier_part: C125039
+  placement:
+    x_mm: 30.48
+    y_mm: 4.826
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': SW_PREV
+    '2': SW_NEXT
+    '4': GND
+    '5': GND
+    '6': GND
+    '7': GND
+    T: SW_SELECT
+    C: GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: SLLB510100
+- designator: TP1
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 38.461
+    y_mm: 26.796
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': PB1
+- designator: TP2
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 48.133
+    y_mm: 94.615
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': GND
+- designator: TP3
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 5.08
+    y_mm: 85.471
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': CAN_GND
+- designator: TP4
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 17.714
+    y_mm: 85.47
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': CAN_5V_IN
+- designator: TP5
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 45.466
+    y_mm: 87.63
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': VSD
+- designator: TP6
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 50.8
+    y_mm: 82.803
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': 3.3V
+- designator: TP7
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 52.197
+    y_mm: 65.532
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': 12V
+- designator: TP8
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 50.165
+    y_mm: 56.896
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': 5V
+- designator: TP9
+  type: test_point
+  value: ''
+  placement:
+    x_mm: 30.226
+    y_mm: 8.763
+    rotation_deg: 270.0
+    layer: B
+  pins:
+    '1': VIO
+- designator: U1
+  type: ic
+  value: TPS22929DDBVR
+  footprint: SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL
+  comment: TPS22929DDBVR
+  manufacturer: TI(德州仪器)
+  manufacturer_part: TPS22929DDBVR
+  supplier_part: C415177
+  placement:
+    x_mm: 52.959
+    y_mm: 85.217
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': VSD
+    '2': GND
+    '3': SD_ON
+    '4': 3.3V
+    '5': GND
+    '6': 3.3V
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: TPS22929DDBVR
+- designator: U2
+  type: ic
+  value: CA-IS2062VW
+  footprint: CA-IS305XW
+  comment: CA-IS2062VW
+  manufacturer: Chipanalog(川土微)
+  manufacturer_part: CA-IS2062VW
+  supplier_part: C5271191
+  placement:
+    x_mm: 15.875
+    y_mm: 78.232
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 5V
+    '2': GND
+    '3': CAN_TX
+    '5': $3N53887
+    '7': 3.3V
+    '8': GND
+    '9': CAN_GND
+    '10': CAN_GND
+    '11': CAN_5V_IN
+    '12': $3N53786
+    '13': $3N53774
+    '15': CAN_GND
+    '16': CAN_5V_OUT
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: CA-IS2062VW
+- designator: U3
+  type: ic
+  value: TLV62569DBVR
+  footprint: SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR
+  comment: TLV62569DBVR
+  manufacturer: TI(德州仪器)
+  manufacturer_part: TLV62569DBVR
+  supplier_part: C141836
+  placement:
+    x_mm: 54.102
+    y_mm: 75.438
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': 5V
+    '2': GND
+    '3': VSW
+    '4': 5V
+    '5': VFB
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 降压型 输入2.5V~5.5V 输出600mV~5.5V 2A
+- designator: U4
+  type: ic
+  value: W25Q128JVSIQ
+  footprint: SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL
+  comment: W25Q128JVSIQ
+  manufacturer: WINBOND(华邦)
+  manufacturer_part: W25Q128JVSIQ
+  supplier_part: C97521
+  placement:
+    x_mm: 43.81
+    y_mm: 63.627
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': FLASH_CS
+    '2': $2N741099
+    '3': 3.3V
+    '4': GND
+    '5': SPI2_MOSI
+    '6': SPI2_CLK
+    '7': 3.3V
+    '8': 3.3V
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: W25Q128JVSIQ 编带
+- designator: U5
+  type: ic
+  value: DS3231MZ+TRL
+  footprint: SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL
+  comment: DS3231MZ+TRL
+  manufacturer: ADI(亚德诺)/MAXIM(美信)
+  manufacturer_part: DS3231MZ+TRL
+  supplier_part: C107410
+  placement:
+    x_mm: 18.288
+    y_mm: 60.579
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': RTC
+    '2': 3.3V
+    '3': IRQ_I2C
+    '5': GND
+    '6': VBAT
+    '7': I2C1_SDA
+    '8': I2C1_SCL
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: DS3231MZ+TRL
+- designator: U6
+  type: ic
+  value: TLV61046ADBVR
+  footprint: SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL
+  comment: TLV61046ADBVR
+  manufacturer: TI(德州仪器)
+  manufacturer_part: TLV61046ADBVR
+  supplier_part: C464815
+  placement:
+    x_mm: 54.61
+    y_mm: 62.738
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': $2N576115
+    '2': GND
+    '3': 5V
+    '4': 3.3V
+    '5': 12V
+    '6': 5V
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: TLV61046ADBVR
+- designator: U7
+  type: ic
+  value: W25Q128JVSIQ
+  footprint: SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL
+  comment: W25Q128JVSIQ
+  manufacturer: WINBOND(华邦)
+  manufacturer_part: W25Q128JVSIQ
+  supplier_part: C97521
+  placement:
+    x_mm: 32.004
+    y_mm: 56.769
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': $1N343310
+    '2': $1N343309
+    '3': $1N343308
+    '4': GND
+    '5': $1N343307
+    '6': $1N343306
+    '7': $1N343305
+    '8': 3.3V
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: W25Q128JVSIQ 编带
+- designator: U8
+  type: ic
+  value: 22uH
+  footprint: IND-SMD_L4.0-W4.0-A
+  comment: 22uH
+  manufacturer: DMBJ(振宝佳)
+  manufacturer_part: PNLS4018-220M 22UH
+  supplier_part: C2849465
+  placement:
+    x_mm: 54.61
+    y_mm: 58.166
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 5V
+    '2': $2N576115
+  tolerance: ±20%
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 22uH ±20% –40℃~+125℃
+- designator: U9
+  type: ic
+  value: 24LC16BT-I/OT
+  footprint: SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR
+  comment: 24LC16BT-I/OT
+  manufacturer: MICROCHIP(美国微芯)
+  manufacturer_part: 24LC16BT-I/OT
+  supplier_part: C2061286
+  placement:
+    x_mm: 18.288
+    y_mm: 51.816
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': I2C1_SCL
+    '2': GND
+    '3': I2C1_SDA
+    '4': 3.3V
+    '5': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 24LC16BT I/OT
+- designator: U10
+  type: ic
+  value: TPS22929DDBVR
+  footprint: SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL
+  comment: TPS22929DDBVR
+  manufacturer: TI(德州仪器)
+  manufacturer_part: TPS22929DDBVR
+  supplier_part: C415177
+  placement:
+    x_mm: 48.387
+    y_mm: 52.578
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': 5V
+    '2': GND
+    '3': VBUS
+    '4': VBUS
+    '5': GND
+    '6': VBUS
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: TPS22929DDBVR
+- designator: U11
+  type: ic
+  value: 1206L050YR
+  footprint: F1206
+  comment: 1206L050YR
+  manufacturer: Littelfuse(美国力特)
+  manufacturer_part: 1206L050YR
+  supplier_part: C163512
+  placement:
+    x_mm: 48.387
+    y_mm: 46.101
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '1': HS_VBUS
+    '2': VBUS
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 6V 500mA 1206自恢复
+- designator: U12
+  type: ic
+  value: AT32F405RCT7-7
+  footprint: LQFP-64_L7.0-W7.0-P0.40-LS9.0-TL
+  comment: AT32F405RCT7-7
+  manufacturer: Artery(雅特力)
+  manufacturer_part: AT32F405RCT7-7
+  supplier_part: C9900094935
+  placement:
+    x_mm: 30.48
+    y_mm: 38.1
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': 3.3V
+    '2': IRQ_I2C
+    '3': OSC32_IN
+    '4': OSC32_OUT
+    '5': OSC_IN
+    '6': OSC_OUT
+    '7': RST
+    '8': I2C3_SCL
+    '9': I2C3_SDA
+    '10': LED0
+    '11': ADC_VIO
+    '12': GND
+    '13': 3.3V_ANA
+    '14': PA0
+    '15': PA1
+    '16': SERIAL_TXD
+    '17': SERIAL_RXD
+    '18': T_OE
+    '19': T_POWER_ON
+    '20': PA4
+    '21': PA5
+    '22': PA6
+    '23': PA7
+    '24': AUX_TXD
+    '25': AUX_RXD
+    '26': T_RST_IN
+    '27': PB1
+    '28': IRQ_PREV
+    '29': IRQ_SELECT
+    '30': IRQ_NEXT
+    '31': GND
+    '32': T_RST_OUT
+    '33': HS_R
+    '34': HS_DM
+    '35': HS_DP
+    '36': 3.3V
+    '37': CONSOLE_TXD
+    '38': CONSOLE_RXD
+    '39': SD_ON
+    '40': SD_DETECT
+    '41': $1N200203
+    '42': $1N200201
+    '43': $1N200200
+    '44': $1N200169
+    '45': SPI2_MISO
+    '46': SYS_SWDIO
+    '47': AUX_SWO
+    '48': DISP_DC
+    '49': SYS_SWCLK
+    '50': QSPI_IO2
+    '51': QSPI_IO1
+    '52': QSPI_CS
+    '53': DISP_RST
+    '54': DISP_CS
+    '55': QSPI_IO3
+    '56': QSPI_SCK
+    '57': QSPI_IO0
+    '58': I2C1_SCL
+    '59': I2C1_SDA
+    '60': BOOT0
+    '61': CAN_RX
+    '62': $1N200184
+    '63': GND
+    '64': 3.3V
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: AT32F405RCT7-7
+- designator: U13
+  type: ic
+  value: SN74AVC4T774PWR
+  footprint: TSSOP-16_L5.0-W4.4-P0.65-LS6.4-BL
+  comment: SN74AVC4T774PWR
+  manufacturer: TI(德州仪器)
+  manufacturer_part: SN74AVC4T774PWR
+  supplier_part: C129363
+  placement:
+    x_mm: 17.018
+    y_mm: 17.653
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': $3N4403
+    '2': $3N4404
+    '3': $3N4405
+    '4': $3N4406
+    '5': $3N4411
+    '6': $3N4412
+    '7': $3N4413
+    '8': $3N4414
+    '9': T_OE
+    '10': GND
+    '11': $3N4348
+    '12': $3N4347
+    '13': $3N4349
+    '14': $3N4350
+    '15': VIO
+    '16': 3.3V
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: SN74AVC4T774PWR
+- designator: U14
+  type: ic
+  value: 74HC14D,653
+  footprint: SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL
+  comment: 74HC14D,653
+  manufacturer: Nexperia(安世)
+  manufacturer_part: 74HC14D,653
+  supplier_part: C5605
+  placement:
+    x_mm: 31.242
+    y_mm: 16.256
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': SW_NEXT
+    '2': $2N788718
+    '3': SW_SELECT
+    '4': $2N788825
+    '5': SW_PREV
+    '6': $2N788929
+    '7': GND
+    '8': IRQ_PREV
+    '9': $2N788938
+    '10': IRQ_SELECT
+    '11': $2N788818
+    '12': IRQ_NEXT
+    '13': $2N788708
+    '14': 3.3V
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 六路施密特触发反相器
+- designator: U15
+  type: ic
+  value: SN74AVC4T774PWR
+  footprint: TSSOP-16_L5.0-W4.4-P0.65-LS6.4-BL
+  comment: SN74AVC4T774PWR
+  manufacturer: TI(德州仪器)
+  manufacturer_part: SN74AVC4T774PWR
+  supplier_part: C129363
+  placement:
+    x_mm: 43.942
+    y_mm: 17.653
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': GND
+    '2': GND
+    '3': $3N86563
+    '4': $3N86568
+    '5': $3N86573
+    '6': $3N86578
+    '7': GND
+    '8': 3.3V
+    '9': T_OE
+    '10': GND
+    '11': $3N5227
+    '12': $3N5228
+    '13': $3N5229
+    '14': $3N5230
+    '15': VIO
+    '16': 3.3V
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: SN74AVC4T774PWR
+- designator: U16
+  type: ic
+  value: TPS22929DDBVR
+  footprint: SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL
+  comment: TPS22929DDBVR
+  manufacturer: TI(德州仪器)
+  manufacturer_part: TPS22929DDBVR
+  supplier_part: C415177
+  placement:
+    x_mm: 24.13
+    y_mm: 13.081
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': VIO
+    '2': GND
+    '3': T_POWER_ON
+    '4': 3.3V
+    '5': GND
+    '6': 3.3V
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: TPS22929DDBVR
+- designator: USBC1
+  type: unknown
+  value: TYPE-C-31-M-12
+  footprint: USB-C_SMD-TYPE-C-31-M-12
+  comment: TYPE-C-31-M-12
+  manufacturer: 韩国韩荣
+  manufacturer_part: TYPE-C-31-M-12
+  supplier_part: C165948
+  placement:
+    x_mm: 54.864
+    y_mm: 35.201
+    rotation_deg: 90.0
+    layer: T
+  pins:
+    '0': $1N254540
+    A5: $1N254529
+    B7: HS_DM
+    A6: HS_DP
+    A7: HS_DM
+    B6: HS_DP
+    B5: $1N254528
+    A1: GND
+    B12: GND
+    A4: HS_VBUS
+    B9: HS_VBUS
+    B4: HS_VBUS
+    A9: HS_VBUS
+    B1: GND
+    A12: GND
+  jlcpcb_part_class: ExtendedPart
+- designator: X1
+  type: crystal
+  value: 32.768kHz
+  footprint: FC-135R_L3.2-W1.5
+  comment: 32.768kHz
+  manufacturer: EPSON(爱普生)
+  manufacturer_part: Q13FC1350000400
+  supplier_part: C32346
+  placement:
+    x_mm: 19.812
+    y_mm: 43.688
+    rotation_deg: 180.0
+    layer: T
+  pins:
+    '1': OSC32_IN
+    '2': OSC32_OUT
+  jlcpcb_part_class: Basic Part
+  lcsc_part_name: 32.768kHz ±20ppm 12.5pF
+- designator: X2
+  type: crystal
+  value: 12MHz
+  footprint: CRYSTAL-SMD_4P-L3.2-W2.5-BL
+  comment: 12MHz
+  manufacturer: CJ(江苏长电/长晶)
+  manufacturer_part: CJ13-120001210B20
+  supplier_part: C2875246
+  placement:
+    x_mm: 19.431
+    y_mm: 38.1
+    rotation_deg: 0.0
+    layer: T
+  pins:
+    '1': OSC_OUT
+    '2': GND
+    '3': OSC_IN
+    '4': GND
+  jlcpcb_part_class: Extended Part
+  lcsc_part_name: 12MHz ±10ppm 12pF
+nets:
+- name: $1N200169
+  connections:
+  - RN3-4
+  - U12-44
+- name: $1N200184
+  connections:
+  - R19-1
+  - U12-62
+- name: $1N200200
+  connections:
+  - RN3-3
+  - U12-43
+- name: $1N200201
+  connections:
+  - RN3-2
+  - U12-42
+- name: $1N200203
+  connections:
+  - RN3-1
+  - U12-41
+- name: $1N206167
+  connections:
+  - LED1-1
+  - R36-2
+- name: $1N254528
+  connections:
+  - R21-1
+  - USBC1-B5
+- name: $1N254529
+  connections:
+  - R23-2
+  - USBC1-A5
+- name: $1N254540
+  connections:
+  - C36-2
+  - R25-2
+  - USBC1-0
+- name: $1N343305
+  connections:
+  - RN1-4
+  - U7-7
+- name: $1N343306
+  connections:
+  - RN1-3
+  - U7-6
+- name: $1N343307
+  connections:
+  - RN1-2
+  - U7-5
+- name: $1N343308
+  connections:
+  - RN2-7
+  - U7-3
+- name: $1N343309
+  connections:
+  - RN2-6
+  - U7-2
+- name: $1N343310
+  connections:
+  - R18-2
+  - RN2-5
+  - U7-1
+- name: $2N508660
+  connections:
+  - CARD1-7
+  - R1-2
+- name: $2N576115
+  connections:
+  - U6-1
+  - U8-2
+- name: $2N741099
+  connections:
+  - R13-2
+  - U4-2
+- name: $2N788708
+  connections:
+  - C38-1
+  - R26-2
+  - U14-13
+- name: $2N788718
+  connections:
+  - R26-1
+  - U14-2
+- name: $2N788818
+  connections:
+  - C39-1
+  - R27-2
+  - U14-11
+- name: $2N788825
+  connections:
+  - R27-1
+  - U14-4
+- name: $2N788929
+  connections:
+  - R28-1
+  - U14-6
+- name: $2N788938
+  connections:
+  - C40-1
+  - R28-2
+  - U14-9
+- name: $3N4347
+  connections:
+  - R29-1
+  - RN7-2
+  - U13-12
+- name: $3N4348
+  connections:
+  - R31-1
+  - RN7-1
+  - U13-11
+- name: $3N4349
+  connections:
+  - R30-1
+  - RN7-3
+  - U13-13
+- name: $3N4350
+  connections:
+  - R32-1
+  - RN7-4
+  - U13-14
+- name: $3N4403
+  connections:
+  - RN5-5
+  - U13-1
+- name: $3N4404
+  connections:
+  - RN5-6
+  - U13-2
+- name: $3N4405
+  connections:
+  - RN5-7
+  - U13-3
+- name: $3N4406
+  connections:
+  - RN5-8
+  - U13-4
+- name: $3N4411
+  connections:
+  - RN4-5
+  - U13-5
+- name: $3N4412
+  connections:
+  - RN4-6
+  - U13-6
+- name: $3N4413
+  connections:
+  - RN4-7
+  - U13-7
+- name: $3N4414
+  connections:
+  - RN4-8
+  - U13-8
+- name: $3N5227
+  connections:
+  - RN8-1
+  - U15-11
+- name: $3N5228
+  connections:
+  - R33-1
+  - RN8-2
+  - U15-12
+- name: $3N5229
+  connections:
+  - R34-1
+  - RN8-3
+  - U15-13
+- name: $3N5230
+  connections:
+  - RN8-4
+  - U15-14
+- name: $3N53774
+  connections:
+  - L1-1
+  - U2-13
+- name: $3N53786
+  connections:
+  - L1-2
+  - U2-12
+- name: $3N53887
+  connections:
+  - R10-2
+  - U2-5
+- name: $3N5450
+  connections:
+  - Q1-1
+  - R24-2
+  - R35-2
+- name: $3N86563
+  connections:
+  - RN6-1
+  - U15-3
+- name: $3N86568
+  connections:
+  - RN6-2
+  - U15-4
+- name: $3N86573
+  connections:
+  - RN6-3
+  - U15-5
+- name: $3N86578
+  connections:
+  - RN6-4
+  - U15-6
+- name: 12V
+  connections:
+  - C13-2
+  - C15-2
+  - C16-2
+  - FPC1-11
+  - FPC1-2
+  - TP7-1
+  - U6-5
+- name: 3.3V
+  connections:
+  - C11-2
+  - C12-2
+  - C14-2
+  - C18-2
+  - C20-1
+  - C22-2
+  - C23-1
+  - C27-2
+  - C28-2
+  - C30-2
+  - C33-2
+  - C37-2
+  - C42-1
+  - C44-2
+  - C46-1
+  - C6-2
+  - C9-2
+  - CN2-2
+  - CN3-1
+  - FPC1-9
+  - L3-2
+  - L4-1
+  - LED1-2
+  - R11-2
+  - R12-2
+  - R15-2
+  - R16-1
+  - R17-1
+  - R18-1
+  - R3-2
+  - R4-2
+  - R40-2
+  - R41-2
+  - R42-2
+  - R43-2
+  - R5-2
+  - R6-2
+  - R7-1
+  - R9-2
+  - SW1-3
+  - TP6-1
+  - U1-4
+  - U1-6
+  - U12-1
+  - U12-36
+  - U12-64
+  - U13-16
+  - U14-14
+  - U15-16
+  - U15-8
+  - U16-4
+  - U16-6
+  - U2-7
+  - U4-3
+  - U4-7
+  - U4-8
+  - U5-2
+  - U6-4
+  - U7-8
+  - U9-4
+- name: 3.3V_ANA
+  connections:
+  - C32-2
+  - C34-2
+  - L4-2
+  - U12-13
+- name: 5V
+  connections:
+  - C10-2
+  - C19-2
+  - C7-2
+  - C8-2
+  - TP8-1
+  - U10-1
+  - U2-1
+  - U3-1
+  - U3-4
+  - U6-3
+  - U6-6
+  - U8-1
+- name: ADC_VIO
+  connections:
+  - C47-1
+  - D10-2
+  - R37-2
+  - R38-1
+  - U12-11
+- name: AUX_RXD
+  connections:
+  - RN6-6
+  - U12-25
+- name: AUX_SWO
+  connections:
+  - RN6-7
+  - U12-47
+- name: AUX_TXD
+  connections:
+  - RN6-5
+  - U12-24
+- name: BOOT0
+  connections:
+  - D4-2
+  - R20-1
+  - SW1-4
+  - U12-60
+- name: CAN_5V_IN
+  connections:
+  - C3-2
+  - L2-2
+  - TP4-1
+  - U2-11
+- name: CAN_5V_OUT
+  connections:
+  - C1-2
+  - C2-2
+  - L2-1
+  - U2-16
+- name: CAN_GND
+  connections:
+  - C1-1
+  - C2-1
+  - C3-1
+  - CN1-1
+  - CN1-6
+  - CN1-7
+  - CN1-8
+  - D1-3
+  - M1-1
+  - TP3-1
+  - U2-10
+  - U2-15
+  - U2-9
+- name: CAN_HI
+  connections:
+  - CN1-3
+  - CN1-5
+  - D1-2
+  - L1-4
+- name: CAN_LO
+  connections:
+  - CN1-2
+  - CN1-4
+  - D1-1
+  - L1-3
+- name: CAN_RX
+  connections:
+  - R10-1
+  - U12-61
+- name: CAN_TX
+  connections:
+  - R15-1
+  - R19-2
+  - U2-3
+- name: CONSOLE_RXD
+  connections:
+  - CN3-3
+  - D9-4
+  - D9-7
+  - U12-38
+- name: CONSOLE_TXD
+  connections:
+  - CN3-2
+  - D9-5
+  - D9-6
+  - U12-37
+- name: DISP_CS
+  connections:
+  - FPC1-7
+  - U12-54
+- name: DISP_DC
+  connections:
+  - FPC1-5
+  - U12-48
+- name: DISP_RST
+  connections:
+  - FPC1-6
+  - U12-53
+- name: FLASH_CS
+  connections:
+  - R7-2
+  - RN3-8
+  - U4-1
+- name: GND
+  connections:
+  - BT1-3
+  - C10-1
+  - C11-1
+  - C12-1
+  - C13-1
+  - C14-1
+  - C15-1
+  - C16-1
+  - C17-1
+  - C18-1
+  - C19-1
+  - C20-2
+  - C21-1
+  - C22-1
+  - C23-2
+  - C24-1
+  - C25-1
+  - C26-1
+  - C27-1
+  - C28-1
+  - C29-2
+  - C30-1
+  - C31-1
+  - C32-1
+  - C33-1
+  - C34-1
+  - C35-1
+  - C36-1
+  - C37-1
+  - C38-2
+  - C39-2
+  - C4-1
+  - C40-2
+  - C41-2
+  - C42-2
+  - C43-2
+  - C44-1
+  - C45-2
+  - C46-2
+  - C47-2
+  - C48-1
+  - C49-2
+  - C5-2
+  - C50-2
+  - C6-1
+  - C7-1
+  - C8-1
+  - CARD1-10
+  - CARD1-11
+  - CARD1-12
+  - CARD1-13
+  - CARD1-6
+  - CN2-1
+  - CN2-5
+  - CN2-6
+  - CN3-6
+  - CN3-7
+  - CN3-8
+  - CN4-6
+  - CN4-7
+  - CN4-8
+  - CN5-6
+  - CN5-7
+  - CN5-8
+  - D10-1
+  - D11-3
+  - D11-8
+  - D12-1
+  - D13-1
+  - D14-1
+  - D15-1
+  - D16-1
+  - D17-3
+  - D17-8
+  - D2-2
+  - D2-3
+  - D2-4
+  - D2-7
+  - D2-8
+  - D2-9
+  - D3-2
+  - D3-3
+  - D3-8
+  - D3-9
+  - D4-1
+  - D5-2
+  - D6-1
+  - D7-3
+  - D7-4
+  - D7-5
+  - D7-6
+  - D7-7
+  - D7-8
+  - D8-1
+  - D8-10
+  - D8-3
+  - D8-5
+  - D8-6
+  - D8-8
+  - D9-3
+  - D9-8
+  - FPC1-1
+  - FPC1-12
+  - FPC1-13
+  - FPC1-14
+  - M2-1
+  - M3-1
+  - M4-1
+  - Q1-2
+  - R14-1
+  - R2-1
+  - R20-2
+  - R21-2
+  - R22-2
+  - R23-1
+  - R25-1
+  - R35-1
+  - R37-1
+  - R39-1
+  - R8-1
+  - RN2-1
+  - RN2-8
+  - SW2-3
+  - SW3-4
+  - SW3-5
+  - SW3-6
+  - SW3-7
+  - SW3-C
+  - TP2-1
+  - U1-2
+  - U1-5
+  - U10-2
+  - U10-5
+  - U12-12
+  - U12-31
+  - U12-63
+  - U13-10
+  - U14-7
+  - U15-1
+  - U15-10
+  - U15-2
+  - U15-7
+  - U16-2
+  - U16-5
+  - U2-2
+  - U2-8
+  - U3-2
+  - U4-4
+  - U5-5
+  - U6-2
+  - U7-4
+  - U9-2
+  - U9-5
+  - USBC1-A1
+  - USBC1-A12
+  - USBC1-B1
+  - USBC1-B12
+  - X2-2
+  - X2-4
+- name: HS_DM
+  connections:
+  - D7-2
+  - D7-9
+  - U12-34
+  - USBC1-A7
+  - USBC1-B7
+- name: HS_DP
+  connections:
+  - D7-1
+  - D7-10
+  - U12-35
+  - USBC1-A6
+  - USBC1-B6
+- name: HS_R
+  connections:
+  - R22-1
+  - U12-33
+- name: HS_VBUS
+  connections:
+  - D5-1
+  - U11-1
+  - USBC1-A4
+  - USBC1-A9
+  - USBC1-B4
+  - USBC1-B9
+- name: I2C1_SCL
+  connections:
+  - R16-2
+  - RN1-1
+  - RN1-8
+  - U12-58
+  - U5-8
+  - U9-1
+- name: I2C1_SDA
+  connections:
+  - R17-2
+  - U12-59
+  - U5-7
+  - U9-3
+- name: I2C3_SCL
+  connections:
+  - CN2-4
+  - D8-4
+  - D8-7
+  - U12-8
+- name: I2C3_SDA
+  connections:
+  - CN2-3
+  - D8-2
+  - D8-9
+  - U12-9
+- name: IREF
+  connections:
+  - FPC1-8
+  - R14-2
+- name: IRQ_I2C
+  connections:
+  - R11-1
+  - U12-2
+  - U5-3
+- name: IRQ_NEXT
+  connections:
+  - U12-30
+  - U14-12
+- name: IRQ_PREV
+  connections:
+  - U12-28
+  - U14-8
+- name: IRQ_SELECT
+  connections:
+  - U12-29
+  - U14-10
+- name: LED0
+  connections:
+  - R36-1
+  - U12-10
+- name: OSC32_IN
+  connections:
+  - C26-2
+  - U12-3
+  - X1-1
+- name: OSC32_OUT
+  connections:
+  - C25-2
+  - U12-4
+  - X1-2
+- name: OSC_IN
+  connections:
+  - C29-1
+  - U12-5
+  - X2-3
+- name: OSC_OUT
+  connections:
+  - C31-2
+  - U12-6
+  - X2-1
+- name: PA0
+  connections:
+  - RN4-1
+  - U12-14
+- name: PA1
+  connections:
+  - RN4-2
+  - U12-15
+- name: PA4
+  connections:
+  - RN5-1
+  - U12-20
+- name: PA5
+  connections:
+  - RN5-2
+  - U12-21
+- name: PA6
+  connections:
+  - RN5-3
+  - U12-22
+- name: PA7
+  connections:
+  - RN5-4
+  - U12-23
+- name: PB1
+  connections:
+  - TP1-1
+  - U12-27
+- name: QSPI_CS
+  connections:
+  - RN2-4
+  - U12-52
+- name: QSPI_IO0
+  connections:
+  - RN1-7
+  - U12-57
+- name: QSPI_IO1
+  connections:
+  - RN2-3
+  - U12-51
+- name: QSPI_IO2
+  connections:
+  - RN2-2
+  - U12-50
+- name: QSPI_IO3
+  connections:
+  - RN1-5
+  - U12-55
+- name: QSPI_SCK
+  connections:
+  - RN1-6
+  - U12-56
+- name: RST
+  connections:
+  - C35-2
+  - D6-2
+  - SW2-4
+  - U12-7
+- name: RTC
+  connections:
+  - R12-1
+  - U5-1
+- name: SD_CS
+  connections:
+  - CARD1-2
+  - D2-1
+  - D2-10
+  - R3-1
+  - RN3-5
+- name: SD_DETECT
+  connections:
+  - CARD1-9
+  - D3-5
+  - D3-6
+  - R6-1
+  - U12-40
+- name: SD_ON
+  connections:
+  - R2-2
+  - U1-3
+  - U12-39
+- name: SERIAL_RXD
+  connections:
+  - RN4-4
+  - U12-17
+- name: SERIAL_TXD
+  connections:
+  - RN4-3
+  - U12-16
+- name: SPI2_CLK
+  connections:
+  - CARD1-5
+  - D3-1
+  - D3-10
+  - FPC1-4
+  - RN3-7
+  - U4-6
+- name: SPI2_MISO
+  connections:
+  - D3-4
+  - D3-7
+  - R1-1
+  - R13-1
+  - R5-1
+  - U12-45
+- name: SPI2_MOSI
+  connections:
+  - CARD1-3
+  - D2-5
+  - D2-6
+  - FPC1-3
+  - R4-1
+  - RN3-6
+  - U4-5
+- name: SW_NEXT
+  connections:
+  - D12-2
+  - R40-1
+  - SW3-2
+  - U14-1
+- name: SW_PREV
+  connections:
+  - D14-2
+  - R42-1
+  - SW3-1
+  - U14-5
+- name: SW_SELECT
+  connections:
+  - D13-2
+  - R41-1
+  - SW3-T
+  - U14-3
+- name: SYS_SWCLK
+  connections:
+  - CN3-5
+  - D9-1
+  - D9-10
+  - U12-49
+- name: SYS_SWDIO
+  connections:
+  - CN3-4
+  - D9-2
+  - D9-9
+  - U12-46
+- name: T_AUX_RXD
+  connections:
+  - CN5-3
+  - D17-4
+  - D17-7
+  - RN8-7
+- name: T_AUX_TXD
+  connections:
+  - CN5-2
+  - D17-5
+  - D17-6
+  - RN8-8
+- name: T_OE
+  connections:
+  - R43-1
+  - U12-18
+  - U13-9
+  - U15-9
+- name: T_POWER_ON
+  connections:
+  - R39-2
+  - U12-19
+  - U16-3
+- name: T_RST
+  connections:
+  - CN5-5
+  - D17-1
+  - D17-10
+  - Q1-3
+  - R44-2
+  - RN8-5
+- name: T_RST_IN
+  connections:
+  - RN6-8
+  - U12-26
+- name: T_RST_OUT
+  connections:
+  - R24-1
+  - U12-32
+- name: T_RXD
+  connections:
+  - CN4-3
+  - D11-4
+  - D11-7
+  - RN7-7
+- name: T_SWCLK
+  connections:
+  - CN4-5
+  - D11-1
+  - D11-10
+  - RN7-5
+- name: T_SWDIO
+  connections:
+  - CN4-4
+  - D11-2
+  - D11-9
+  - RN7-6
+- name: T_SWO
+  connections:
+  - CN5-4
+  - D17-2
+  - D17-9
+  - RN8-6
+- name: T_TXD
+  connections:
+  - CN4-2
+  - D11-5
+  - D11-6
+  - RN7-8
+- name: VBAT
+  connections:
+  - BT1-1
+  - BT1-2
+  - C21-2
+  - U5-6
+- name: VBUS
+  connections:
+  - C24-2
+  - U10-3
+  - U10-4
+  - U10-6
+  - U11-2
+- name: VCOMH
+  connections:
+  - C17-2
+  - FPC1-10
+- name: VFB
+  connections:
+  - C9-1
+  - R8-2
+  - R9-1
+  - U3-5
+- name: VIO
+  connections:
+  - C41-1
+  - C43-1
+  - C45-1
+  - C48-2
+  - C49-1
+  - C50-1
+  - CN4-1
+  - CN5-1
+  - D15-2
+  - D16-2
+  - R29-2
+  - R30-2
+  - R31-2
+  - R32-2
+  - R33-2
+  - R34-2
+  - R38-2
+  - R44-1
+  - TP9-1
+  - U13-15
+  - U15-15
+  - U16-1
+- name: VSD
+  connections:
+  - C4-2
+  - C5-1
+  - CARD1-4
+  - TP5-1
+  - U1-1
+- name: VSW
+  connections:
+  - L3-1
+  - U3-3
+statistics:
+  component_types:
+    battery: 1
+    capacitor: 50
+    unknown: 4
+    connector: 5
+    diode: 17
+    inductor: 4
+    led: 1
+    mechanical: 4
+    transistor: 1
+    resistor: 44
+    resistor_array: 8
+    switch: 3
+    test_point: 9
+    ic: 16
+    crystal: 2
