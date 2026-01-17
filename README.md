@@ -186,6 +186,7 @@ Check [examples/](examples/) folder:
 
 - CAN bus interface module
 - AT32F405 microcontroller board
+- Si5351 clock generator
 
 These show real output format and typical file size.
 
